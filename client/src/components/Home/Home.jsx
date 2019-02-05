@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
-import { Jumbotron, Container, Row, Col, Image, Button, CardDeck, Card, /*Link*/ } from 'react-bootstrap';
+import { Jumbotron, Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 import './Home.css';
 import Navbar from '../CustomNavbar/CustomNavbar';
 import Footer from '../Footer/Footer';
 // import RoadmapCards from '../RoadmapCards/RoadmapCards';
+import icons from '../RoadmapCards/icons';
+import CardsList from '../RoadmapCards/CardsList';
+
 
 
 class Home extends Component {
+    state = {
+    icons,
+};
+
+
     render () {
         return (
             <Container fluid>
@@ -20,9 +30,9 @@ class Home extends Component {
                             <h2>Because coding is a collaborative work, you’ll be able to mark any topic and schedule a session where other users can join and go through the content together.</h2>
                                 <Row className="login">
                                 <Col>
-                                    {/* <Link to="/dashboard"> */}
-                                        <Button className="button" size="lg" block>Let's Go!</Button>
-                                    {/* </Link> */}
+                                    <Link to="/Autho">
+                                        <Button variant="danger" className="button" size="lg" block>Let's Go!</Button>
+                                    </Link>
                                 </Col>
                                 <Col xs={7}>
                                     <p>After clicking the button, you’ll be taken to an external authentication site to sign up/login. By signing up you agree to our Privacy Policy & Terms of Service. </p>
@@ -35,18 +45,22 @@ class Home extends Component {
                         </Row>
                 </Jumbotron>
                 <Row>
-                    <Col>
-                        <div style={{ display: 'flex',  justifyContent:'center', alignItems:'center' }}>
+                    <Col xs={12}>
+                        <div style={{ display: 'flex', justifyContent:'center', alignItems:'center', width: '100%' }}>
                             <h2 className="roadmap">The bootcamp’s fullstack developer roadmap.</h2>
                         </div>
-                        <div style={{ display: 'flex',  justifyContent:'center', alignItems:'center' }}>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={12}>
+                        <div style={{ display: 'flex', justifyContent:'center', alignItems:'center', width: '100%' }}>
                             <p className="roadmap-description">It's all a game of angles. I'm gonna start with a little Alizarin crimson and a touch of Prussian blue Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. We don't need any guidelines or formats. All we need to do is just let it flow right out of us.
                             No pressure. Just relax and watch it happen. It's a good way of getting rid of all your anxieties and hostilities. We have no limits to our world. We're only limited by our imagination. Here's another little happy bush Without washing the brush, I'm gonna go right into some Van Dyke Brown, some Burnt Umber, and a little bit of Sap Green. Work on one thing at a time. Don't get carried away - we have plenty of time.</p>
                         </div>  
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
+                {/* <Row>
+                    <Col xs={12}>
                         <CardDeck>
                             <Card className="card" style={{ height: '200px', width: '100%' }}>
                                 <Card.Img src="assets/SVG/github-icon.svg" style={{ height: '150px'}} />
@@ -84,7 +98,7 @@ class Home extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col xs={12}>
                         <CardDeck>
                             <Card className="card" style={{ height: '200px', width: '100%' }}>
                                 <Card.Img src="assets/SVG/nodejs-icon.svg" style={{ height: '150px'}} />
@@ -120,18 +134,17 @@ class Home extends Component {
                             </Card>
                         </CardDeck>
                     </Col>
-                </Row>
-
-                    {/* {this.state.friends.map(friend => (
-                        <Col size="md-3 sm-6">
-                            <RoadmapCards
-                            key={friend.id}
-                            // handleClick={this.handleClick}
-                            id={friend.id}
-                            image={friend.image}
-                            />
-                        </Col>
-                    ))} */}                 
+                </Row> */}
+                <Row>
+                    {this.state.icons.map (icons =>(
+                        <CardsList
+                        key={icons.id}
+                        id={icons.id}
+                        image={icons.image}
+                        name={icons.name}
+                        />
+                    ))}
+                </Row>                 
             <Footer />
             </Container>
         );

@@ -20,21 +20,20 @@
 }
 
 .coding-hands {
-    float: left;
+    float: right;
     padding-left: 10em;
     height: 100%;
 }
 
-.col {
-    padding-top: 10px;
-    margin-left:2em;
-    margin-right:2em;
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .col-6 {
     padding-top: 2.5em;
     padding-bottom:2em;
-    padding-left:2em;
+    padding-left:10em;
 }
 
 .login {
@@ -54,6 +53,11 @@
     background: #ef233c;
     box-shadow: 2px 2px 2px #4b1111;
     cursor: pointer;
+}
+
+.button:active {
+    background: #ef233c;
+    transform: translate(1px, 1px);
 }
 
 h1 {
@@ -83,14 +87,16 @@ p {
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
+    padding-left:3em;
+    padding-right:3em;
 }
 
 .roadmap-description{
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.3em;
     color: black;
-    padding-left:3em;
-    padding-right:3em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 .card-deck {
@@ -98,20 +104,21 @@ p {
     margin-bottom: 2em;
 }
 .card {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(248, 248, 248);
     float: left;
     padding-bottom: 0;
     margin-top: 1rem;
     transition: all .2s ease-in-out;
+    border: 0;
 }
 
-.card-img {
+/* .card-img {
     align-content: center;
     padding: 15px;
 
-}
+} */
 
-.card:hover {
+/* .card:hover {
 box-shadow: 4px 4px 4px rgb(170, 170, 170);
 transform: scale(1);
 cursor: pointer;
@@ -119,9 +126,9 @@ cursor: pointer;
 
 .card:active {
 transform: translate(1px, 1px);
-}
+} */
 
-.card-footer {
+/* .card-footer {
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.2em;
     color: white;
@@ -130,4 +137,4 @@ transform: translate(1px, 1px);
     margin-top: 10px;
     margin-bottom: 0;
     border-radius: 0;
-}
+} */
