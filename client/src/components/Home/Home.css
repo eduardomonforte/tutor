@@ -1,0 +1,133 @@
+.container-fluid {
+    padding: 0;
+}
+
+.jumbotron {
+    background-image: url("/assets/top-image.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.show-grid {
+    margin-left: 8em;
+}
+
+.col-5 {
+    padding-left:2em;
+}
+
+.coding-hands {
+    float: left;
+    padding-left: 10em;
+    height: 100%;
+}
+
+.col {
+    padding-top: 10px;
+    margin-left:2em;
+    margin-right:2em;
+}
+
+.col-6 {
+    padding-top: 2.5em;
+    padding-bottom:2em;
+    padding-left:2em;
+}
+
+.login {
+    margin-top:15px;
+    margin-left:0;
+}
+
+.button {
+    background: #ef233c;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3em;
+    }
+
+.button:hover {
+    background: #ef233c;
+    box-shadow: 2px 2px 2px #4b1111;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3em;
+    color: White;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3em;
+    color: White;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+    color: White;
+}
+
+.roadmap {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 2em;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.roadmap-description{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3em;
+    color: black;
+    padding-left:3em;
+    padding-right:3em;
+}
+
+.card-deck {
+    margin: 3em;
+    margin-bottom: 2em;
+}
+.card {
+    background-color: rgb(245, 245, 245);
+    float: left;
+    padding-bottom: 0;
+    margin-top: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.card-img {
+    align-content: center;
+    padding: 15px;
+
+}
+
+.card:hover {
+box-shadow: 4px 4px 4px rgb(170, 170, 170);
+transform: scale(1);
+cursor: pointer;
+}
+
+.card:active {
+transform: translate(1px, 1px);
+}
+
+.card-footer {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
