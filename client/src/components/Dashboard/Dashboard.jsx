@@ -1,53 +1,42 @@
 import React, { Component } from 'react';
-import { CardDeck, Card } from 'react-bootstrap';
+import { Container, Row, Col, CardDeck } from 'react-bootstrap';
+import ResourceCard from '../ResourceCard/ResourceCard';
+import resources from '../../resources/resourcesDB.json';
+import sortResources from '../../resources/sortResources';
 
 class Dashboard extends Component {
+    state = {
+        resources
+    };
+
+    handleSort = (resources) => {
+        let sortedResources = sortResources(resources);
+        this.setState({ resources: sortedResources });
+    };
+
+    componentDidMount() {
+        this.handleSort(this.state.resources)
+        console.log(resources)
+    }
+    
     render() {
         return (
-            <div>
-                <CardDeck>
-                    <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
-                        </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This card has supporting text below as a natural lead-in to additional
-                            content.{' '}
-                        </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
-                        </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
-                    </Card>
-                    </CardDeck>;
-            </div>
+            <Container>
+                <Row>
+                    <Col size="md-3 sm-6">
+                        <CardDeck>
+                            {this.state.resources.map(resource => (
+                                <ResourceCard
+                                    key={resource.id}
+                                    name={resource.name}
+                                    description={resource.description}
+                                    karma={resource.karma}
+                                />
+                            ))} 
+                        </CardDeck>
+                    </Col>
+                </Row>
+            </Container>
         )
     }
 }

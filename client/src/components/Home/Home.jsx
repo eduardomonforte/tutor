@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Jumbotron, Container, Row, Col, Image, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
 import './Home.css';
 import Navbar from '../CustomNavbar/CustomNavbar';
 import Footer from '../Footer/Footer';
 // import RoadmapCards from '../RoadmapCards/RoadmapCards';
 import icons from '../RoadmapCards/icons';
 import CardsList from '../RoadmapCards/CardsList';
+
 
 
 class Home extends Component {
