@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "lorem",
+    "description": "hi",
+    "karma": -4
+  },
+  {
+    "id": 2,
+    "name": "ipsum",
+    "description": "hello",
+    "karma": -2
+  },
+  {
+    "id": 3,
+    "name": "loremipsum",
+    "description": "good morning",
+    "karma": 3
+  },
+  {
+    "id": 4,
+    "name": "muspimerol",
+    "description": "you're doing the thing!",
+    "karma": 0
+  }
+]

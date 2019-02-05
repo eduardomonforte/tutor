@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Jumbotron, Container, Row, Col, Image, Button, CardDeck, Card, Link } from 'react-bootstrap';
+import { Jumbotron, Container, Row, Col, Image, Button, CardDeck, Card, /*Link*/ } from 'react-bootstrap';
 import './Home.css';
 import Navbar from '../CustomNavbar/CustomNavbar';
 import Footer from '../Footer/Footer';
-import RoadmapCards from '../RoadmapCards/RoadmapCards';
+// import RoadmapCards from '../RoadmapCards/RoadmapCards';
 
 
 class Home extends Component {
