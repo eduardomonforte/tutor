@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Github",
+        "image": "assets/SVG/github-icon.svg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "Git",
+        "image": "assets/SVG/git-icon.svg",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "HTML 5",
+        "image": "assets/SVG/html-5.svg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "CSS 3",
+        "image": "assets/SVG/css-3.svg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "Bootstrap",
+        "image": "assets/SVG/bootstrap.svg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "Javascript",
+        "image": "assets/SVG/javascript.svg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "Jquery",
+        "image": "assets/SVG/jquery.svg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "Firebase",
+        "image": "assets/SVG/firebase.svg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "Node.js",
+        "image": "assets/SVG/nodejs-icon.svg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "MySQL",
+        "image": "assets/SVG/mysql.svg",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "Express",
+        "image": "assets/SVG/express.svg",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "Handlebars",
+        "image": "assets/SVG/handlebars.svg",
+        "clicked": false
+    },
+    {
+        "id": 13,
+        "name": "Sequelize",
+        "image": "assets/SVG/sequelize.svg",
+        "clicked": false
+    },
+    {
+        "id": 14,
+        "name": "Mongo & Mongoose",
+        "image": "assets/SVG/mongodb.svg",
+        "clicked": false
+    },
+    {
+        "id": 15,
+        "name": "Wordpress",
+        "image": "assets/SVG/wordpress-icon.svg",
+        "clicked": false
+    }
+    {
+        "id": 16,
+        "name": "React",
+        "image": "assets/SVG/react.svg",
+        "clicked": false
+    }
+]
