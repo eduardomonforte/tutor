@@ -1,0 +1,15 @@
+.Autho-mockup {
+    background: rgb(103,103,103) !important;
+    background: radial-gradient(circle, rgba(103,103,103,1) 26%, rgba(21,23,27,1) 100%) !important;
+    width: 100%;
+    height: 100%;      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Autho{
+    margin-top: 10em;
+    max-width: 400px;
+}

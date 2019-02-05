@@ -1,0 +1,16 @@
+.NoMatch {
+    /* background-image: url("/assets/NoMatch-background.png");  */
+    background: black;
+    width: 100%;
+    height: 100%;      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bookmark-neon{
+    margin-top: 10em;
+    margin-bottom: 10em;
+    max-width:200px;
+}

@@ -88,11 +88,12 @@
         "name": "Wordpress",
         "image": "assets/SVG/wordpress-icon.svg",
         "clicked": false
-    }
+    },
     {
         "id": 16,
         "name": "React",
         "image": "assets/SVG/react.svg",
+        "text": "I thought today we would do a happy little picture. That's a son of a gun of a cloud. You got your heavy coat out yet? It's getting colder.",
         "clicked": false
     }
 ]
