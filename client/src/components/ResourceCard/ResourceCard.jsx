@@ -1,10 +1,10 @@
 import React from "react";
 import { Card } from 'react-bootstrap';
-import "./ResourceCard.css";
+import "../RoadmapCards/RoadmapCards";
 
 const ResourceCard = props => (
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src="holder.js/100px160" style={{ height: '180px'}} />
     <Card.Body>
       <Card.Title>{props.name}</Card.Title>
       <Card.Text>{props.description}</Card.Text>
