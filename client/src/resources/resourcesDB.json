@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "name": "lorem",
-    "description": "hi",
-    "karma": -4
+    "name": "Let's make some happy little clouds",
+    "description": "All you have to do is let your imagination go wild. Now we can begin working on lots of happy little things. Use what happens naturally, don't fight it.",
+    "karma": 6
   },
   {
     "id": 2,
-    "name": "ipsum",
-    "description": "hello",
+    "name": "We all need friends",
+    "description": "Paint anything you want on the canvas. Create your own world. Making all those little fluffies that live in the clouds. It's amazing what you can do with a little love in your heart. Even trees need a friend. ",
     "karma": -2
   },
   {
     "id": 3,
-    "name": "loremipsum",
-    "description": "good morning",
+    "name": "Remember how free clouds are.",
+    "description": "Anything you want to do you can do here. Here's another little happy bush A tree cannot be straight if it has a crooked trunk.",
     "karma": 3
   },
   {
     "id": 4,
-    "name": "muspimerol",
-    "description": "you're doing the thing!",
+    "name": "A happy cloud",
+    "description": "This is the time to get out all your flustrations, much better than kicking the dog around the house or taking it out on your spouse.",
     "karma": 0
   }
 ]
