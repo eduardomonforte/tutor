@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "name": "Bookmark",
+        "image": "assets/SVG/tutor-logo.svg",
+        "clicked": false
+    }
+]
