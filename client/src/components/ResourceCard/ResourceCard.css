@@ -3,5 +3,6 @@
 }
 
 .button-container {
-    content-align: right;
+    align-content: right !important;
+    display: inline-block;
 }

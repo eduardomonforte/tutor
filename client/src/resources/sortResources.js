@@ -3,12 +3,12 @@ module.exports = resources => {
   let filteredResources = []
 
   resources.forEach(resource => {
-    if (resource.karma > -3) {
+    if (resource.rating > -3) {
       filteredResources.push(resource)
     }
   });
 
   return filteredResources.sort(
-    (a,b) => (a.karma < b.karma) ? 1 : ((b.karma < a.karma) ? -1 : 0)
+    (a, b) => (a.rating < b.rating) ? 1 : ((b.rating < a.rating) ? -1 : 0)
   );
 }

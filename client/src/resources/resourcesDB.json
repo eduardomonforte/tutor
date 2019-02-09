@@ -1,26 +1,59 @@
 [
   {
     "id": 1,
-    "name": "Let's make some happy little clouds",
+    "timestap": "December",
+    "topic": "week1",
+    "tag": [
+      "javascript",
+      "react",
+      "react native"
+    ],
+    "userId": 1,
+    "url": "#",
+    "title": "React Resource for friends",
     "description": "All you have to do is let your imagination go wild. Now we can begin working on lots of happy little things. Use what happens naturally, don't fight it.",
-    "karma": 6
+    "rating": 6
   },
   {
     "id": 2,
-    "name": "We all need friends",
-    "description": "Paint anything you want on the canvas. Create your own world. Making all those little fluffies that live in the clouds. It's amazing what you can do with a little love in your heart. Even trees need a friend. ",
-    "karma": -2
+    "timestap": "January",
+    "topic": "week1",
+    "tag": [
+      "bootstrap",
+      "css"
+    ],
+    "userId": 1,
+    "url": "#",
+    "title": "Bootstrap Resource for friends",
+    "description": "All you have to do is let your imagination go wild. Now we can begin working on lots of happy little things. Use what happens naturally, don't fight it.",
+    "rating": 6
   },
   {
     "id": 3,
-    "name": "Remember how free clouds are.",
-    "description": "Anything you want to do you can do here. Here's another little happy bush A tree cannot be straight if it has a crooked trunk.",
-    "karma": 3
+    "timestap": "February",
+    "topic": "week1",
+    "tag": [
+      "git",
+      "github"
+    ],
+    "userId": 1,
+    "url": "#",
+    "title": "GitHub Resource for friends",
+    "description": "All you have to do is let your imagination go wild. Now we can begin working on lots of happy little things. Use what happens naturally, don't fight it.",
+    "rating": 6
   },
   {
     "id": 4,
-    "name": "A happy cloud",
-    "description": "This is the time to get out all your flustrations, much better than kicking the dog around the house or taking it out on your spouse.",
-    "karma": 0
+    "timestap": "March",
+    "topic": "week1",
+    "tag": [
+      "mongo",
+      "mongoose"
+    ],
+    "userId": 1,
+    "url": "#",
+    "title": "Mongoose Resource for friends",
+    "description": "All you have to do is let your imagination go wild. Now we can begin working on lots of happy little things. Use what happens naturally, don't fight it.",
+    "rating": 6
   }
 ]
