@@ -6,23 +6,23 @@ class Footer extends Component {
     render() {
         return (
 
-                <Navbar className="footer">
-                    <Col xs={3}>
-                        <Navbar.Brand href="/" className="icon-bw">
-                            <img src="assets/logo-tutor-bw.png" alt="Tutor logo goes here" id="tutor-logo-bw" />
-                        </Navbar.Brand>
-                    </Col>
-                    <Col xs={6}>
-                        <p className="copyright">Made with care by bootcamp students for bootcamp students.</p>
-                    </Col>
-                    <Col xs={3}>
-                        <Nav className="navbar-nav">
-                            <Nav.Link href="/terms">Terms</Nav.Link>
-                            <Nav.Link href="/about">About</Nav.Link>
-                            <Nav.Link href="/FAQ">FAQs</Nav.Link>
-                        </Nav>
-                    </Col>
-                </Navbar>
+            <Navbar className="footer">
+                <Col xs={3}>
+                    <Navbar.Brand href="/" className="icon-bw">
+                        <img src="assets/logo-tutor-bw.png" alt="Tutor logo goes here" id="tutor-logo-bw" />
+                    </Navbar.Brand>
+                </Col>
+                <Col xs={6} className="footer-text">
+                    <p className="copyright">Made with care by bootcamp students for bootcamp students.</p>
+                </Col>
+                <Col xs={3}>
+                    <Nav className="navbar-nav">
+                        <Nav.Link href="/terms">Terms</Nav.Link>
+                        <Nav.Link href="/about">About</Nav.Link>
+                        <Nav.Link href="/FAQ">FAQs</Nav.Link>
+                    </Nav>
+                </Col>
+            </Navbar>
 
         );
     }
