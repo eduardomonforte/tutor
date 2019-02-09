@@ -63,37 +63,48 @@
         "id": 11,
         "name": "Express",
         "image": "assets/SVG/express.svg",
+        "text": "",
+        "link": "",
         "clicked": false
     },
     {
         "id": 12,
         "name": "Handlebars",
         "image": "assets/SVG/handlebars.svg",
+        "text": "Handlebars.js is a popular templating engine that is powerful, simple to use and has a large community. It is based on the Mustache template language, but improves it in several important ways. With Handlebars, you can separate the generation of HTML from the rest of your JavaScript and write cleaner code.",
+        "link": "https://handlebarsjs.com/",
         "clicked": false
     },
     {
         "id": 13,
         "name": "Sequelize",
         "image": "assets/SVG/sequelize.svg",
+        "text": "Sequelize is a promise-based ORM for Node.js. Sequelize is easy to learn and has dozens of cool features like synchronization, association, validation, etc. It also has support for PostgreSQL, MySQL, MariaDB, SQLite, and MSSQL.",
+        "link": "http://docs.sequelizejs.com/",
         "clicked": false
     },
     {
         "id": 14,
-        "name": "Mongo & Mongoose",
+        "name": "MongoDB",
         "image": "assets/SVG/mongodb.svg",
+        "text": "MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need. MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time",
+        "link": "https://www.mongodb.com/",
         "clicked": false
     },
     {
         "id": 15,
         "name": "Wordpress",
         "image": "assets/SVG/wordpress-icon.svg",
+        "text": "WordPress is an online, open source website creation tool written in PHP. It’s probably the easiest and most powerful blogging and website content management system (or CMS) in existence today.",
+        "link": "https://wordpress.org/",
         "clicked": false
     },
     {
         "id": 16,
         "name": "React",
         "image": "assets/SVG/react.svg",
-        "text": "I thought today we would do a happy little picture. That's a son of a gun of a cloud. You got your heavy coat out yet? It's getting colder.",
+        "text": "React is a JavaScript library for building user interfaces. React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
+        "link": "https://reactjs.org/",
         "clicked": false
     }
 ]

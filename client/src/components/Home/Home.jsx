@@ -141,6 +141,7 @@ class Home extends Component {
                         key={icons.id}
                         id={icons.id}
                         image={icons.image}
+                        description={icons.text}
                         name={icons.name}
                         />
                     ))}
