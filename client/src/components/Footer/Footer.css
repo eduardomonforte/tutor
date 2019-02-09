@@ -1,15 +1,21 @@
 #tutor-logo-bw {
-    width:15%;
+    width:25%;
 }
 
 .footer {
     margin-left:3em;
     margin-right:3em;
     margin-top:1em;
-    padding:0;
+    padding: 1em 0 1em 0;
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: black;
+}
+
+.footer-text {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
 }
 
 .icon-bw {

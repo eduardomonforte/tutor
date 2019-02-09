@@ -25,6 +25,12 @@
     height: 100%;
 }
 
+@media only screen and (max-width: 1300px) {
+    .coding-hands {
+      display: none;
+    }
+  }
+
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -74,7 +80,12 @@ h2 {
 
 p {
     font-family: 'Titillium Web', sans-serif;
-    color: White;
+    color: White !important;
+}
+
+.rogue-text {
+    font-family: 'Titillium Web', sans-serif;
+    color: White !important;
 }
 
 .roadmap {

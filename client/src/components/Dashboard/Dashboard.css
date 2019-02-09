@@ -55,7 +55,7 @@ h2 {
 
 p {
     font-family: 'Titillium Web', sans-serif;
-    color: black ;
+    color: black !important;
 }
 
 .roadmap {
@@ -83,6 +83,7 @@ p {
 .card-deck {
     margin: 3em;
     margin-bottom: 2em;
+    align-items: top;
 }
 
 .card-body {
