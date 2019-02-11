@@ -10,6 +10,17 @@
     transition: all .2s ease-in-out;
 }
 
+.button-for-icon {
+    padding: 10px;
+}
+
+.outside-of-button {
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: white !important;
+    border-color: white !important;
+}
+
 .card-img {
     height: 100%;
     align-content: center;

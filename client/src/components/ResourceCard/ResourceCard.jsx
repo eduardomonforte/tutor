@@ -8,14 +8,14 @@ const ResourceCard = props => (
   <Card style={{ align: 'top' }}>
     <Card.Img variant="top" src="holder.js/100px160" style={{ height: '180px' }} />
     <Card.Body>
-      <Card.Title>{props.name}</Card.Title>
+      <Card.Title>{props.title}</Card.Title>
       <Card.Text>{props.description}</Card.Text>
     </Card.Body>
     <Card.Footer>
       <img alt="whatever" src="/assets/tutor-bookmark.png" width="auto" height="40px" />
-      <small className="card-karma">Karma: {props.karma}</small>
+      <small className="card-karma">Karma: {props.rating}</small>
       <span className="button-container">
-        <Button variant="danger">-</Button><Button variant="success">+</Button>
+        <Button variant="danger" className="justify-content-right">-</Button><Button variant="success" className="justify-content-right">+</Button>
       </span>
     </Card.Footer>
   </Card>

@@ -5,12 +5,113 @@ import Footer from '../Footer/Footer';
 import ResourceCard from '../ResourceCard/ResourceCard';
 import UserDropdown from "../UserDropdown/UserDropdown"
 import resources from '../../resources/resourcesDB.json';
+import icons from "../RoadmapCards/icons.json";
 import sortResources from '../../resources/sortResources';
+import Icons from "../RoadmapCards/RoadMapIcons";
 import './Dashboard.css';
+
+const dropArray = [
+    {
+        "week": "WEEK 0: My Bookmarks",
+        "id": 0
+    },
+    {
+        "week": "WEEK 1: HTML + Git + CSS",
+        "id": 1
+    },
+    {
+        "week": "WEEK 2: CSS-Bootstrap",
+        "id": 2
+    },
+    {
+        "week": "WEEK 3: Javascript",
+        "id": 3
+    },
+    {
+        "week": "WEEK 4: JQuery",
+        "id": 4
+    },
+    {
+        "week": "WEEK 5: Timers",
+        "id": 5
+    },
+    {
+        "week": "WEEK 6: Ajax",
+        "id": 6
+    },
+    {
+        "week": "WEEK 7: Firebase",
+        "id": 7
+    },
+    {
+        "week": "WEEK 8: Project 1",
+        "id": 8
+    },
+    {
+        "week": "WEEK 9: Portfolio update",
+        "id": 9
+    },
+    {
+        "week": "WEEK 10: Node.js",
+        "id": 10
+    },
+    {
+        "week": "WEEK 11: Javascript Constructors",
+        "id": 11
+    },
+    {
+        "week": "WEEK 12: MySQL",
+        "id": 12
+    },
+    {
+        "week": "WEEK 13: Express",
+        "id": 13
+    },
+    {
+        "week": "WEEK 14: Handlebars",
+        "id": 14
+    },
+    {
+        "week": "WEEK 15: Sequelize",
+        "id": 15
+    },
+    {
+        "week": "WEEK 16: Project 2",
+        "id": 16
+    },
+    {
+        "week": "WEEK 17: Mongo + Mongoose",
+        "id": 17
+    },
+    {
+        "week": "WEEK 18: React",
+        "id": 18
+    },
+    {
+        "week": "WEEK 19: Wordpress",
+        "id": 19
+    },
+    {
+        "week": "WEEK 20: Java",
+        "id": 20
+    },
+    {
+        "week": "WEEK 21: Project 3",
+        "id": 21
+    }
+];
 
 class Dashboard extends Component {
     state = {
-        resources
+        resources,
+        icons,
+        dropArray,
+        week: "Select something, dummy"
+    };
+
+    whenClicked = (week, key) => {
+        console.log(week)
+        console.log("index: " + this.state.dropArray.index)
     };
 
     handleSort = (resources) => {
@@ -21,7 +122,7 @@ class Dashboard extends Component {
     componentDidMount() {
         this.handleSort(this.state.resources)
         console.log(resources)
-    }
+    };
 
     render() {
         return (
@@ -32,19 +133,27 @@ class Dashboard extends Component {
                         <Col xs={6}>
                             <h1>Hello, janeDoe</h1>
                             <h2>Now we don't want him to get lonely, so we'll give him a little friend. Brown is such a nice color. We'll paint one happy little tree right here. Decide where your cloud lives. Maybe he lives right in here. I think there's an artist hidden in the bottom of every single one of us. Just let these leaves jump off the brush</h2>
-                            <UserDropdown />
+                            <UserDropdown dropArray={this.state.dropArray} key={this.state.dropArray.index} week={this.state.week} whenClicked={this.whenClicked()} />
                         </Col>
                     </Row>
                 </Jumbotron>
+                <Row xs={12} className="icon-row" style={{ display: 'flex', justifyContent: 'center', alignItems: 'top' }}>
+                    {this.state.icons.map(icon => (
+                        <Icons
+                            key={icon.id}
+                            image={icon.image}
+                        />
+                    ))}
+                </Row>
                 <Row>
                     <Col xs={12}>
                         <CardDeck style={{ display: 'flex', justifyContent: 'center', alignItems: 'top' }}>
                             {this.state.resources.map(resource => (
                                 <ResourceCard
                                     key={resource.id}
-                                    name={resource.name}
+                                    title={resource.title}
                                     description={resource.description}
-                                    karma={resource.karma}
+                                    rating={resource.rating}
                                 />
                             ))}
                         </CardDeck>
