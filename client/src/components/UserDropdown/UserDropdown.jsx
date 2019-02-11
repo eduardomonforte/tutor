@@ -3,8 +3,8 @@ import { Dropdown } from 'react-bootstrap';
 import './UserDropdown.css';
 
 const UserDropdown = props => (
-    <Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic" size="lg" block>
+    <Dropdown className="dropdown">
+        <Dropdown.Toggle variant="Primary" id="dropdown-basic" size="lg" block>
             Select a collection
         </Dropdown.Toggle>
 

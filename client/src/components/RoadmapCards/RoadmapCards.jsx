@@ -9,8 +9,6 @@ const RoadmapCards = props => (
         <div className="img-container">
             <img alt={props.name} title={props.name} src={props.image} />
         </div>
-        <div classname="description">
-        </div>
     </div>
 );
 
