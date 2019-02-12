@@ -12,91 +12,91 @@ import './Dashboard.css';
 
 const dropArray = [
     {
-        "week": "WEEK 0: My Bookmarks",
+        "week": "WEEK 0: My Bookmarks ",
         "id": 0
     },
     {
-        "week": "WEEK 1: HTML + Git + CSS",
+        "week": "WEEK 1: HTML + Git + CSS ",
         "id": 1
     },
     {
-        "week": "WEEK 2: CSS-Bootstrap",
+        "week": "WEEK 2: CSS-Bootstrap ",
         "id": 2
     },
     {
-        "week": "WEEK 3: Javascript",
+        "week": "WEEK 3: Javascript ",
         "id": 3
     },
     {
-        "week": "WEEK 4: JQuery",
+        "week": "WEEK 4: JQuery ",
         "id": 4
     },
     {
-        "week": "WEEK 5: Timers",
+        "week": "WEEK 5: Timers ",
         "id": 5
     },
     {
-        "week": "WEEK 6: Ajax",
+        "week": "WEEK 6: Ajax ",
         "id": 6
     },
     {
-        "week": "WEEK 7: Firebase",
+        "week": "WEEK 7: Firebase ",
         "id": 7
     },
     {
-        "week": "WEEK 8: Project 1",
+        "week": "WEEK 8: Project 1 ",
         "id": 8
     },
     {
-        "week": "WEEK 9: Portfolio update",
+        "week": "WEEK 9: Portfolio update ",
         "id": 9
     },
     {
-        "week": "WEEK 10: Node.js",
+        "week": "WEEK 10: Node.js ",
         "id": 10
     },
     {
-        "week": "WEEK 11: Javascript Constructors",
+        "week": "WEEK 11: Javascript Constructors ",
         "id": 11
     },
     {
-        "week": "WEEK 12: MySQL",
+        "week": "WEEK 12: MySQL ",
         "id": 12
     },
     {
-        "week": "WEEK 13: Express",
+        "week": "WEEK 13: Express ",
         "id": 13
     },
     {
-        "week": "WEEK 14: Handlebars",
+        "week": "WEEK 14: Handlebars ",
         "id": 14
     },
     {
-        "week": "WEEK 15: Sequelize",
+        "week": "WEEK 15: Sequelize ",
         "id": 15
     },
     {
-        "week": "WEEK 16: Project 2",
+        "week": "WEEK 16: Project 2 ",
         "id": 16
     },
     {
-        "week": "WEEK 17: Mongo + Mongoose",
+        "week": "WEEK 17: Mongo + Mongoose ",
         "id": 17
     },
     {
-        "week": "WEEK 18: React",
+        "week": "WEEK 18: React ",
         "id": 18
     },
     {
-        "week": "WEEK 19: Wordpress",
+        "week": "WEEK 19: Wordpress ",
         "id": 19
     },
     {
-        "week": "WEEK 20: Java",
+        "week": "WEEK 20: Java ",
         "id": 20
     },
     {
-        "week": "WEEK 21: Project 3",
+        "week": "WEEK 21: Project 3 ",
         "id": 21
     }
 ];
@@ -106,7 +106,7 @@ class Dashboard extends Component {
         resources,
         icons,
         dropArray,
-        subject: "Select something, dummy"
+        subject: "Please select a subject. "
     };
 
     whenClicked = (week) => {
@@ -147,7 +147,7 @@ class Dashboard extends Component {
                             <Button className="Add-resource" variant="secondary" size="lg" block>Add Resource</Button>
                         </Col>
                         <Col xs={{ span: 2, offset: 3 }}>
-                            <Button className="logout-button" variant="secondary" size="lg" block>Logout</Button>
+                            <Button className="logout-button" variant="secondary" size="lg" block>Sign Out</Button>
                         </Col>
                     </Row>
                 </Jumbotron>

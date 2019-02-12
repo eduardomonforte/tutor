@@ -55,14 +55,17 @@
 }
 
 .login-button.btn.btn-secondary.btn-block.btn-lg {
-    background: #ef233c !important;
+    /* background: #ef233c !important; */
+    background: rgba(239,35,60, 0.80) !important;
     border: none;
     border-radius: 20px;
     font-family: 'Titillium Web', sans-serif;
+    color: white;
 }
 
 .login-button.btn.btn-secondary.btn-block.btn-lg:hover {
-    background: #ef233c !important;
+    /* background: #ef233c !important; */
+    background: rgba(239,35,60, 0.95) !important;
     position:relative;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);

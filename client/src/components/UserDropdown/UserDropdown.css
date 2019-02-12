@@ -26,6 +26,17 @@
 }
 
 .dropdown-toggle {
-    background-color: rgb(255, 255, 255, 0.7) !important;
+    background-color: rgb(255, 255, 255, 0.8) !important;
     border-color: rgb(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 20px;
 }
+
+.dropdown-toggle:hover {
+    background-color: rgb(255, 255, 255, 0.95) !important;
+    border-color: rgb(255, 255, 255, 0.1);
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+}
+

@@ -19,14 +19,14 @@ class Home extends Component {
                     <Navbar />
                     <Row className="show-grid">
                         <Col xs={6} style={{ zIndex: '2' }}>
-                            <h1>Hello, userName</h1>
+                            <h1>Hello, coders</h1>
                             <h2>Tutor is a <strong>powerful and interactive</strong> way of reinforcing your coding bootcamp knowledge.</h2><br />
                             <h2>In here you’ll find the best tutorials and learning resources that follow your bootcamp program, and will help you along the way. The curated content is updated constantly by the same users of this platform.</h2><br />
                             <h2>Because coding is a collaborative work, you’ll be able to mark any topic and schedule a session where other users can join and go through the content together.</h2>
                             <Row className="login">
                                 <Col className="lets-go-btn">
                                     {/* <Link to="/Autho"> */}
-                                        <Button href="/Autho" variant ="secondary" className="login-button" size="lg" block>Let's Go!</Button>
+                                    <Button href="/Autho" variant="secondary" className="login-button" id="loginbutton" size="lg" block>Let's Go!</Button>
                                     {/* </Link> */}
                                 </Col>
                                 <Col xs={7} className="disclaimer">
@@ -56,18 +56,18 @@ class Home extends Component {
                 </Row>
                 <Row>
                     <CardDeck style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-                    {this.state.icons.map(icons => (
-                        <CardsList
-                        key={icons.id}
-                        id={icons.id}
-                        image={icons.image}
-                        description={icons.text}
-                        name={icons.name}
-                        />
-                    ))}
+                        {this.state.icons.map(icons => (
+                            <CardsList
+                                key={icons.id}
+                                id={icons.id}
+                                image={icons.image}
+                                description={icons.text}
+                                name={icons.name}
+                            />
+                        ))}
                     </CardDeck>
                 </Row>
-                <Footer />s
+                <Footer />
             </Container >
         );
     }
