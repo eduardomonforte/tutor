@@ -17,9 +17,9 @@ class Footer extends Component {
                 </Col>
                 <Col xs={3}>
                     <Nav className="navbar-nav">
-                        <Nav.Link href="/terms">Terms</Nav.Link>
-                        <Nav.Link href="/about">About</Nav.Link>
-                        <Nav.Link href="/FAQ">FAQs</Nav.Link>
+                        <Nav.Link href="/NoMatch">Terms</Nav.Link>
+                        <Nav.Link href="/NoMatch">About</Nav.Link>
+                        <Nav.Link href="/NoMatch">FAQs</Nav.Link>
                     </Nav>
                 </Col>
             </Navbar>
