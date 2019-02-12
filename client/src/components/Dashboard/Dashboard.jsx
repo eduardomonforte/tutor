@@ -130,7 +130,7 @@ class Dashboard extends Component {
             <Container fluid>
                 <Jumbotron fluid>
                     <Navbar />
-                    <Row className="show-grid text-justify">
+                    <Row className="show-grid">
                         <Col xs={6} >
                             <h1>Hello, janeDoe</h1>
                             <h2>Now we don't want him to get lonely, so we'll give him a little friend. Brown is such a nice color. We'll paint one happy little tree right here. Decide where your cloud lives. Maybe he lives right in here. I think there's an artist hidden in the bottom of every single one of us. Just let these leaves jump off the brush</h2>
@@ -140,14 +140,14 @@ class Dashboard extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={4}>
+                        <Col xs={4} className="dropdown">
                             <UserDropdown dropArray={this.state.dropArray} key={this.state.dropArray.index} subject={this.state.subject} whenClicked={this.whenClicked} />
-                            <Button size xs={2} className="Add-resource">+</Button>
                         </Col>
-                        <Col className="logout">
-                            {/* <Link to="/Autho"> */}
-                                <Button href="#" className="logout-button" size="lg">Logout</Button>
-                            {/* </Link> */}
+                        <Col xs={2}>
+                            <Button className="Add-resource" variant="secondary" size="lg" block>Add Resource</Button>
+                        </Col>
+                        <Col xs={{ span: 2, offset: 3 }}>
+                            <Button className="logout-button" variant="secondary" size="lg" block>Logout</Button>
                         </Col>
                     </Row>
                 </Jumbotron>
@@ -160,18 +160,16 @@ class Dashboard extends Component {
                     ))}
                 </Row>
                 <Row>
-                    <Col xs={12}>
-                        <CardDeck style={{ display: 'flex', justifyContent: 'center', alignItems: 'top' }}>
-                            {this.state.resources.map(resource => (
-                                <ResourceCard
-                                    key={resource.id}
-                                    title={resource.title}
-                                    description={resource.description}
-                                    rating={resource.rating}
-                                />
-                            ))}
-                        </CardDeck>
-                    </Col>
+                    <CardDeck style={{ display: 'flex', justifyContent: 'center', alignItems: 'top', width: '100%' }}>
+                        {this.state.resources.map(resource => (
+                            <ResourceCard
+                                key={resource.id}
+                                title={resource.title}
+                                description={resource.description}
+                                rating={resource.rating}
+                            />
+                        ))}
+                    </CardDeck>
                 </Row>
                 <Footer />
             </Container >
