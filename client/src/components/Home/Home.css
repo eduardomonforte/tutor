@@ -6,7 +6,7 @@
     background-image: url("/assets/top-image.jpg");
     position: relative;
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     padding-bottom: 0;
     padding-top: 0;
 }

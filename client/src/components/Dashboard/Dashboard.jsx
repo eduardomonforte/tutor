@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Container, Row, Col, CardDeck } from 'react-bootstrap';
+import { Jumbotron, Container, Row, Col, Image, CardDeck, Button } from 'react-bootstrap';
 import Navbar from '../CustomNavbar/CustomNavbar';
 import Footer from '../Footer/Footer';
 import ResourceCard from '../ResourceCard/ResourceCard';
@@ -106,12 +106,13 @@ class Dashboard extends Component {
         resources,
         icons,
         dropArray,
-        week: "Select something, dummy"
+        subject: "Select something, dummy"
     };
 
-    whenClicked = (week, key) => {
-        console.log(week)
-        console.log("index: " + this.state.dropArray.index)
+    whenClicked = (week) => {
+        console.log('Week selected: ', week);
+        this.setState({ subject: week.week });
+        // console.log("index: " + this.state.dropArray.index)
     };
 
     handleSort = (resources) => {
@@ -130,10 +131,23 @@ class Dashboard extends Component {
                 <Jumbotron fluid>
                     <Navbar />
                     <Row className="show-grid text-justify">
-                        <Col xs={6}>
+                        <Col xs={6} >
                             <h1>Hello, janeDoe</h1>
                             <h2>Now we don't want him to get lonely, so we'll give him a little friend. Brown is such a nice color. We'll paint one happy little tree right here. Decide where your cloud lives. Maybe he lives right in here. I think there's an artist hidden in the bottom of every single one of us. Just let these leaves jump off the brush</h2>
-                            <UserDropdown dropArray={this.state.dropArray} key={this.state.dropArray.index} week={this.state.week} whenClicked={this.whenClicked()} />
+                        </Col>
+                        <Col xs={5} style={{ zIndex: '1' }}>
+                            <Image src="assets/tag-image.png" className="tag-image" Reactstyle />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={4}>
+                            <UserDropdown dropArray={this.state.dropArray} key={this.state.dropArray.index} subject={this.state.subject} whenClicked={this.whenClicked} />
+                            <Button size xs={2} className="Add-resource">+</Button>
+                        </Col>
+                        <Col className="logout">
+                            {/* <Link to="/Autho"> */}
+                                <Button href="#" className="logout-button" size="lg">Logout</Button>
+                            {/* </Link> */}
                         </Col>
                     </Row>
                 </Jumbotron>
