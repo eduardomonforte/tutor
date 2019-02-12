@@ -9,7 +9,6 @@ const UserDropdown = ({ dropArray, week, whenClicked }) => {
                 <Dropdown.Toggle variant="success" id="dropdown-basic" size="lg" block>
                     {week}
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                     {dropArray.map((week) => (
                         <Dropdown.Item href="#" onSelect={() => whenClicked({ week: week.week })}>{week.week}</Dropdown.Item>

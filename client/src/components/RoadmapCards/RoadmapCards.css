@@ -1,12 +1,14 @@
 .card-deck {
     align-content: center;
+    
 }
 .card {
     background-color: rgb(250, 250, 250);
-    border-radius: 1.1em;
+    border-radius: .8em;
     float: left;
     padding-bottom: 0;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em !important;
     transition: all .2s ease-in-out;
 }
 
@@ -29,9 +31,12 @@
 }
 
 .card:hover {
-box-shadow: 4px 4px 4px rgb(170, 170, 170);
-transform: scale(1);
-cursor: pointer;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 .card:active {
@@ -46,6 +51,15 @@ transform: translate(1px, 1px);
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0;
-    border-bottom-left-radius: .8em !important;
-    border-bottom-right-radius: .8em !important;
+    border-bottom-left-radius: .6em !important;
+    border-bottom-right-radius: .6em !important;
+}
+
+.back {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title {
+    text-align: center;
 }
