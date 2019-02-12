@@ -67,7 +67,7 @@ class Home extends Component {
                     ))}
                     </CardDeck>
                 </Row>
-                <Footer />s
+                <Footer />
             </Container >
         );
     }
