@@ -34,11 +34,11 @@
 .Add-resource {
     border-radius:20px;
     float: right;
-    background-color:#66eb66 !important;
+    background-color: rgba(102,235,102, 0.8) !important;
 }
 
 .Add-resource:hover {
-    background: #66eb66 !important;
+    background: rgba(102,235,102, 0.95) !important;
     position:relative;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
@@ -46,23 +46,23 @@
     cursor: pointer;
 }
 
-.Add-resource:focus,
+/*.Add-resource:focus,
 .Add-resource:active {
-    background: #66eb66 !important;
+    background: rgba(102,235,102, 1) !important;
     outline: none !important;
     transform: translate(1px, 1px);
-}
+} */
 
 .logout-button.btn.btn-secondary.btn-block.btn-lg {
     float: right !important;
-    background: #ef233c !important;
+    background: rgba(239,35,60, 0.8) !important;
     border: none;
     border-radius: 20px;
     font-family: 'Titillium Web', sans-serif;
 }
 
 .logout-button.btn.btn-secondary.btn-block.btn-lg:hover {
-    background: #ef233c !important;
+    background: rgba(239,35,60, 0.95) !important;
     position:relative;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
