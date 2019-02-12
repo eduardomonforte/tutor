@@ -7,7 +7,8 @@ function Cards(props) {
         <div>
             <Card style={{ width: '18rem' }}>
                 <Card.Img src= {props.image} alt="card" className="card-img" style={{ height: '180px'}} />
-                {/* <Card.Body>
+                {/* <Card.Body> */}
+
                 {/* <Card.Title className="title">{props.name}</Card.Title> */}
                 {/* <Card.Text className="back">{props.description}</Card.Text> */}
                 {/* <Card.Link className="link">{props.link}</Card.Link> */}

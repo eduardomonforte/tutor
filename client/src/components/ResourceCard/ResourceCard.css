@@ -6,3 +6,12 @@
     align-content: right !important;
     display: inline-block;
 }
+
+.btn-success {
+    outline:0;
+    margin:5px;
+}
+
+.btn-danger {
+    outline:0;
+}

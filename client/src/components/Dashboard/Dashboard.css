@@ -6,7 +6,7 @@
     background-image: url("/assets/top-image.jpg");
     position: relative;
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -15,25 +15,37 @@
     margin-left: 8em;
 }
 
-.col-5 {
-    padding-left:2em;
+.tag-image {
+    float: right;
+    padding-left: 5em;
+    height: 100%;
 }
+    
+@media only screen and (max-width: 1300px) {
+    .tag-image {
+    display: none;
+    }
+}
+
+/* .col-5 {
+    padding-left:2em;
+} */
 
 .row {
     margin-left: 0;
     margin-right: 0;
 }
 
-.col-6 {
+/* .col-6 {
     padding-top: 2.5em;
     padding-bottom:2em;
     padding-left:10em;
-}
+} */
 
-.login {
+/* .login {
     margin-top:15px;
     margin-left:0;
-}
+} */
 
 
 .button:active {
@@ -58,7 +70,7 @@ p {
     color: black !important;
 }
 
-.roadmap {
+/* .roadmap {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
     color: black;
@@ -78,7 +90,7 @@ p {
     color: black;
     padding-left: 3em;
     padding-right: 3em;
-}
+} */
 
 .card-deck {
     margin: 3em;
@@ -96,4 +108,10 @@ p {
     margin-top: 1rem;
     transition: all .2s ease-in-out;
     border: 0;
+}
+
+.icon-row {
+    margin-left:2em;
+    margin-right:2em;
+    margin-top:0;
 }

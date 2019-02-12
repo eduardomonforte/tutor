@@ -9,7 +9,7 @@ function Icons(props) {
             <ButtonToolbar aria-label="Toolbar with button groups">
 
                 <ButtonGroup aria-label="Third group">
-                    <Button className="outside-of-button"><img className="button-for-icon" src={props.image} alt="whatever" height="100px" width="100px" /></Button>
+                    <Button className="outside-of-button"><img className="button-for-icon" src={props.image} alt="whatever" height="80px" width="80px" /></Button>
                 </ButtonGroup>
 
             </ButtonToolbar>
