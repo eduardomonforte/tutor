@@ -17,10 +17,10 @@ function ResourceCard (props) {
             {/* <Col>
               <Button
             </Col> */}
-            // <img className="bookmark-icon" alt="bookmark" src="/assets/tutor-bookmark.png" width="auto" height="40px" />
-            // <small className="card-karma">Karma: {props.rating}</small>
+            <img className="bookmark-icon" alt="bookmark" src="/assets/tutor-bookmark.png" width="auto" height="40px" />
+            <small className="card-karma">Rating: {props.rating}</small>
             // <span className="button-container" height="30px">
-            //   <Button variant="danger" className="justify-content-right">-</Button><Button variant="success" className="justify-content-right">+</Button>
+            // // <Button variant="danger" className="justify-content-right">-</Button><Button variant="success" className="justify-content-right">+</Button>
             </span>
           </Card.Footer>
         </Card>
