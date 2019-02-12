@@ -6,17 +6,9 @@
     background-image: url("/assets/top-image.jpg");
     position: relative;
     background-size: cover;
-    background-position: top center;
+    background-position: top left;
     padding-bottom: 0;
     padding-top: 0;
-}
-
-.show-grid {
-    margin-left: 8em;
-}
-
-.col-5 {
-    padding-left:2em;
 }
 
 .coding-hands {
@@ -58,19 +50,19 @@
 .rogue-text {
     font-family: 'Titillium Web', sans-serif;
     color: White !important;
+    font-size:12px;
     text-align: justify;
 }
 
-.login-button {
-    background: #ef233c;
+.login-button.btn.btn-secondary.btn-block.btn-lg {
+    background: #ef233c !important;
     border: none;
     border-radius: 20px;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 1.3em;
 }
 
-.login-button:hover {
-    background: #ef233c;
+.login-button.btn.btn-secondary.btn-block.btn-lg:hover {
+    background: #ef233c !important;
     position:relative;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
@@ -78,8 +70,8 @@
     cursor: pointer;
 }
 
-.login-button:focus,
-.login-button:active {
+.login-button.btn.btn-secondary.btn-block.btn-lg:focus,
+.login-button.btn.btn-secondary.btn-block.btn-lg:active {
     background: #ef233c !important;
     outline: none !important;
     transform: translate(1px, 1px);

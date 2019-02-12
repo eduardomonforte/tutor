@@ -17,7 +17,7 @@ class Home extends Component {
             <Container fluid>
                 <Jumbotron fluid>
                     <Navbar />
-                    <Row className="show-grid text-justify">
+                    <Row className="show-grid">
                         <Col xs={6} style={{ zIndex: '2' }}>
                             <h1>Hello, userName</h1>
                             <h2>Tutor is a <strong>powerful and interactive</strong> way of reinforcing your coding bootcamp knowledge.</h2><br />
@@ -26,7 +26,7 @@ class Home extends Component {
                             <Row className="login">
                                 <Col className="lets-go-btn">
                                     {/* <Link to="/Autho"> */}
-                                        <Button href="/Autho" className="login-button" size="lg" block>Let's Go!</Button>
+                                        <Button href="/Autho" variant ="secondary" className="login-button" size="lg" block>Let's Go!</Button>
                                     {/* </Link> */}
                                 </Col>
                                 <Col xs={7} className="disclaimer">

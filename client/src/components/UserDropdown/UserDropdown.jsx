@@ -1,5 +1,5 @@
 import React from "react";
-import { Dropdown, ButtonGroup, Button } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 import './UserDropdown.css';
 
 const UserDropdown = ({ dropArray, subject, whenClicked }) => {
