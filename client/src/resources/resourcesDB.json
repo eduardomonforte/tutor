@@ -1,26 +1,97 @@
 [
   {
     "id": 1,
-    "name": "Let's make some happy little clouds",
-    "description": "All you have to do is let your imagination go wild. Now we can begin working on lots of happy little things. Use what happens naturally, don't fight it.",
-    "karma": 6
+    "name": "The Art of Node: An introduction to Node.js",
+    "url": "https://github.com/maxogden/art-of-node/#the-art-of-node",
+    "description": "These are the open source collaboration tools that people in the node community use to share modules. You just need to know the basics.",
+    "topic": "node",
+    "rating": 6
   },
   {
     "id": 2,
-    "name": "We all need friends",
-    "description": "Paint anything you want on the canvas. Create your own world. Making all those little fluffies that live in the clouds. It's amazing what you can do with a little love in your heart. Even trees need a friend. ",
-    "karma": -2
+    "name": "Express/Node introduction",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction",
+    "description": "In this first Express article we answer the questions 'What is Node?' and 'What is Express?', and give you an overview of what makes the Express web framework special. We'll outline the main features, and show you some of the main building blocks of an Express application (although at this point you won't yet have a development environment in which to test it).",
+    "topic": "node",
+    "rating": -2
   },
   {
     "id": 3,
-    "name": "Remember how free clouds are.",
-    "description": "Anything you want to do you can do here. Here's another little happy bush A tree cannot be straight if it has a crooked trunk.",
-    "karma": 3
+    "name": "Node.js Introduction.",
+    "url": "https://www.w3schools.com/nodejs/nodejs_intro.asp",
+    "description": "What is Node.js? an introduction from w3schools.",
+    "topic": "node",
+    "rating": 3
   },
   {
     "id": 4,
-    "name": "A happy cloud",
-    "description": "This is the time to get out all your flustrations, much better than kicking the dog around the house or taking it out on your spouse.",
-    "karma": 0
+    "name": "Node.js - Introduction",
+    "url": "https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm",
+    "description": "Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine). Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36. The definition of Node.js as supplied by its official documentation is as follows",
+    "topic": "node",
+    "rating": 0
+  },
+  {
+    "id": 5,
+    "name": "The only NodeJs introduction you’ll ever need.",
+    "url": "https://codeburst.io/the-only-nodejs-introduction-youll-ever-need-d969a47ef219",
+    "description": "A step by step introduction to writing web apps with the JavaScript environment.",
+    "topic": "node",
+    "rating": 1
+  },
+  {
+    "id": 6,
+    "name": "The Node Beginner Book",
+    "url": "https://www.nodebeginner.org/",
+    "description": "The aim of this document is to get you started with developing applications with Node.js, teaching you everything you need to know about 'advanced' JavaScript along the way. It goes way beyond your typical 'Hello World' tutorial.",
+    "topic": "node",
+    "rating": -1
+  },
+  {
+    "id": 7,
+    "name": "JavaScript Tutorial",
+    "url":"https://www.w3schools.com/js/",
+    "description": "JavaScript is the programming language of HTML and the Web. JavaScript is easy to learn.This tutorial will teach you JavaScript from basic to advanced.",
+    "topic": "javascript",
+    "rating": 3
+  },
+  {
+    "id": 8,
+    "name": "The Modern Javascript Tutorial",
+    "url": "https://javascript.info/",
+    "description": "Main course contains 2 parts which cover JavaScript as a programming language and working with a browser. There are also additional series of thematic articles.",
+    "topic": "javascript",
+    "rating": -3
+  },
+  {
+    "id": 9,
+    "name": "JavaScript Tutorial for Beginners | Mosh",
+    "url": "https://www.youtube.com/watch?v=0QeFAE03qJc",
+    "description": "JavaScript Tutorial for Beginners.",
+    "topic": "javascript",
+    "rating": 4
+  },
+  {
+    "id": 10,
+    "name": "Learn JavaScript - Full Course for Beginners",
+    "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+    "description": "This complete 134-part JavaScript tutorial for beginners will teach you everything you need to know to get started with the JavaScript programming language. The font-size in this tutorial is large, making it perfect for viewing on small screens.",
+    "topic": "javascript",
+    "rating": 2
+  },
+  {
+    "id": 11,
+    "name": "Plural Sight Tutorial",
+    "url": "https://www.javascript.com/try",
+    "description": "Start learning JavaScript with us by typing in your first name surrounded by quotation marks, and ending with a semicolon.",
+    "topic": "javascript",
+    "rating": 3
+  },
+  {
+    "id": 12,
+    "name": "JavaScript Tutorials",
+    "description": "Originally designed for adding small amounts of interactivity to a page (like hovers and animations - you know the kind of thing), JavaScript is now used for almost anything up to large applications and games, and can even be found in servers.",
+    "topic": "javascript",
+    "rating": 1
   }
 ]
