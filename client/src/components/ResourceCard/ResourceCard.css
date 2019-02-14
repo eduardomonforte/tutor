@@ -2,20 +2,83 @@
     color: white;
 }
 
-.button-container {
+/* .button-container {
     align-content: right !important;
     display: inline-block;
-}
+} */
 
-.btn-success {
+/* .btn-success {
     outline:0;
     margin:5px;
 }
 
 .btn-danger {
     outline:0;
+} */
+
+.no-gutters.row {
+    padding:0;
 }
 
-.bookmark-icon {
+.col {
+    padding:0;
+}
+
+.bookmark-button {
+    background-color: transparent !important;
+    border: 0;
+    outline: none;
+    padding: 0;
     float: left;
 }
+#bookmark-icon {
+    height: 40px;
+}
+
+.karma {
+    color: white !important;
+    margin: 0;
+    font-size: .9em;
+    padding: 0;
+    margin-top: .5em;
+    float: left;
+}
+
+.downvote-button {
+    background-color: transparent !important;
+    border: 0;
+    outline: none;
+    padding: 0;
+    float: right;
+    margin-right: 0
+}
+
+#downvote-icon {
+    height: 35px;
+}
+
+.upvote-button {
+    background-color: transparent !important;
+    border: 0;
+    outline: none;
+    padding: 0;
+    padding-left:5px;
+    float: right;
+}
+
+/* .upvote-button:hover {
+    background-color: black !important;
+    border-color: transparent !important;
+    padding: 0;
+    padding-left:3px;
+    float: right;
+} */
+
+#upvote-icon {
+    height: 35px;
+}
+
+/* #upvote-icon:hover {
+    fill: black;
+    height: 45px;
+} */
