@@ -9,6 +9,7 @@ import icons from "../RoadmapCards/icons.json";
 import sortResources from '../../resources/sortResources';
 import Icons from "../RoadmapCards/RoadMapIcons";
 import './Dashboard.css';
+import Swal from 'sweetalert2';
 
 const dropArray = [
     {
@@ -115,6 +116,32 @@ class Dashboard extends Component {
         // console.log("index: " + this.state.dropArray.index)
     };
 
+    addResource = () => {
+        console.log('Resource added.');
+        Swal.fire({
+            type: 'info',
+            title: 'Resource added!',
+            text: "...just kidding, we're still working on this."
+        })
+
+    }
+
+    signOut = () => {
+        Swal.fire({
+            type: 'info',
+            title: 'You were swallowed by a black hole!',
+            text: "Sorry about that, it looks like we broke the space-time continuum."
+        })
+    }
+
+    voteRecorded = () => {
+        Swal.fire({
+            type: 'success',
+            title: 'You were swallowed by a black hole!',
+            text: "Sorry about that, it looks like we broke the space-time continuum."
+        })
+    }
+
     handleSort = (resources) => {
         let sortedResources = sortResources(resources);
         this.setState({ resources: sortedResources });
@@ -133,7 +160,7 @@ class Dashboard extends Component {
                     <Row className="show-grid">
                         <Col xs={6} >
                             <h1>Hello, janeDoe</h1>
-                            <h2>Now we don't want him to get lonely, so we'll give him a little friend. Brown is such a nice color. We'll paint one happy little tree right here. Decide where your cloud lives. Maybe he lives right in here. I think there's an artist hidden in the bottom of every single one of us. Just let these leaves jump off the brush</h2>
+                            <h2>Ok, we know your name is not really janeDoe. But hey, what can we say? We're on it, kind anonymous user. By the end of the week this will show your actual username.</h2>
                         </Col>
                         <Col xs={5} style={{ zIndex: '1' }}>
                             <Image src="assets/tag-image.png" className="tag-image" Reactstyle />
@@ -144,10 +171,10 @@ class Dashboard extends Component {
                             <UserDropdown dropArray={this.state.dropArray} key={this.state.dropArray.index} subject={this.state.subject} whenClicked={this.whenClicked} />
                         </Col>
                         <Col xs={2}>
-                            <Button className="Add-resource" variant="secondary" size="lg" block>Add Resource</Button>
+                            <Button className="Add-resource" variant="secondary" size="lg" block onClick={this.addResource}>Add Resource</Button>
                         </Col>
                         <Col xs={{ span: 2, offset: 3 }}>
-                            <Button className="logout-button" variant="secondary" size="lg" block>Sign Out</Button>
+                            <Button className="logout-button" variant="secondary" size="lg" block onClick={this.signOut}>Sign Out</Button>
                         </Col>
                     </Row>
                 </Jumbotron>
@@ -164,7 +191,7 @@ class Dashboard extends Component {
                         {this.state.resources.map(resource => (
                             <ResourceCard
                                 key={resource.id}
-                                title={resource.title}
+                                title={resource.name}
                                 description={resource.description}
                                 rating={resource.rating}
                             />

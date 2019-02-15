@@ -19,9 +19,9 @@ class Home extends Component {
                     <Navbar />
                     <Row className="show-grid">
                         <Col xs={6} style={{ zIndex: '2' }}>
-                            <h1>Hello, coders</h1>
+                            <h1>Hello, students</h1>
                             <h2>Tutor is a <strong>powerful and interactive</strong> way of reinforcing your coding bootcamp knowledge.</h2><br />
-                            <h2>In here you’ll find the best tutorials and learning resources that follow your bootcamp program, and will help you along the way. The curated content is updated constantly by the same users of this platform.</h2><br />
+                            <h2>In here you’ll find the best tutorials and learning resources that follow your bootcamp program, and will help you along the way. The curated content is updated constantly by the users of this platform.</h2><br />
                             <h2>Because coding is a collaborative work, you’ll be able to mark any topic and schedule a session where other users can join and go through the content together.</h2>
                             <Row className="login">
                                 <Col className="lets-go-btn">
