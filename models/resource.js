@@ -10,11 +10,15 @@ const resourceSchema = new Schema({
     type: String,
     required: true
   },
+  url: {
+    type: String,
+    required: true
+  },
   rating: {
     type: Number,
     default: 0
   },
-  dateAdded: {
+  date: {
     type: Date,
     required: true
   },
