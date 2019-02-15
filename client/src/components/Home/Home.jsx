@@ -6,11 +6,22 @@ import Footer from '../Footer/Footer';
 // import RoadmapCards from '../RoadmapCards/RoadmapCards';
 import icons from '../RoadmapCards/icons';
 import CardsList from '../RoadmapCards/CardsList';
+import Swal from 'sweetalert2';
 
 class Home extends Component {
     state = {
         icons,
     };
+
+    showDescription = (description, url, image) => {
+        console.log(icons);
+        Swal.fire({
+            // type: 'info',
+            imageUrl: image,
+            text: description,
+            title: url
+        })
+    }
 
     render() {
         return (
@@ -63,6 +74,8 @@ class Home extends Component {
                                 image={icons.image}
                                 description={icons.text}
                                 name={icons.name}
+                                url={icons.link}
+                                showDescription={this.showDescription}
                             />
                         ))}
                     </CardDeck>

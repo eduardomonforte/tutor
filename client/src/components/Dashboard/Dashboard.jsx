@@ -126,6 +126,14 @@ class Dashboard extends Component {
 
     }
 
+    upvote = () => {
+        console.log('Upvote registered.');
+    }
+
+    downvote = () => {
+        console.log('Downvote registered.');
+    }
+
     signOut = () => {
         Swal.fire({
             type: 'info',
@@ -194,6 +202,9 @@ class Dashboard extends Component {
                                 title={resource.name}
                                 description={resource.description}
                                 rating={resource.rating}
+                                url={resource.url}
+                                upvote={this.upvote}
+                                downvote={this.downvote}
                             />
                         ))}
                     </CardDeck>
