@@ -24,7 +24,10 @@ const resources = resourceIds => {
         return {
           ...resource._doc,
           _id: resource.id,
-          contributor: user.bind(this, resource.contributor)
+          contributor: user.bind(
+            this,
+            resource.contributor
+          )
         }
       })
     })
@@ -39,7 +42,10 @@ const user = userId => {
       return {
         ...user._doc,
         _id: user.id,
-        contributedResources: resources.bind(this, user._doc.contributedResources)
+        contributedResources: resources.bind(
+          this, 
+          user._doc.contributedResources
+        )
       }
     })
     .catch(err => {
@@ -105,7 +111,10 @@ app.use('/graphql', graphqlHttp({
             return { 
               ...resource._doc,
               _id: resource.id,
-              contributor: user.bind(this, resource._doc.contributor)
+              contributor: user.bind(
+                this,
+                resource._doc.contributor
+              )
             }
           })
         })
