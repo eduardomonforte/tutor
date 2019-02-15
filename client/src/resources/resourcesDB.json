@@ -4,7 +4,12 @@
     "name": "The Art of Node: An introduction to Node.js",
     "url": "https://github.com/maxogden/art-of-node/#the-art-of-node",
     "description": "These are the open source collaboration tools that people in the node community use to share modules. You just need to know the basics.",
-    "topic": "node",
+    "topic": "week1",
+    "tags": [
+      "javascript",
+      "node",
+      "jquery"
+    ],
     "rating": 6
   },
   {
@@ -17,7 +22,7 @@
   },
   {
     "id": 3,
-    "name": "Node.js Introduction.",
+    "name": "Node.js Introduction",
     "url": "https://www.w3schools.com/nodejs/nodejs_intro.asp",
     "description": "What is Node.js? an introduction from w3schools.",
     "topic": "node",
@@ -86,12 +91,5 @@
     "description": "Start learning JavaScript with us by typing in your first name surrounded by quotation marks, and ending with a semicolon.",
     "topic": "javascript",
     "rating": 3
-  },
-  {
-    "id": 12,
-    "name": "JavaScript Tutorials",
-    "description": "Originally designed for adding small amounts of interactivity to a page (like hovers and animations - you know the kind of thing), JavaScript is now used for almost anything up to large applications and games, and can even be found in servers.",
-    "topic": "javascript",
-    "rating": 1
   }
 ]

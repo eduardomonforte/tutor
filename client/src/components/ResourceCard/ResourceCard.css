@@ -66,6 +66,10 @@
     float: right;
 }
 
+.card-title {
+    color: #429191 !important;
+}
+
 /* .upvote-button:hover {
     background-color: black !important;
     border-color: transparent !important;
