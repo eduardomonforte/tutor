@@ -41,7 +41,7 @@ class Home extends Component {
                             <Row className="login">
                                 <Col className="lets-go-btn">
                                     {/* <Link to="/Autho"> */}
-                                    <Button href="https://tutor-app-1.herokuapp.com/login" variant="secondary" className="login-button" id="loginbutton" size="lg" block>Let's Go!</Button>
+                                    <Button href="/login" variant="secondary" className="login-button" id="loginbutton" size="lg" block>Let's Go!</Button>
                                     {/* </Link> */}
                                 </Col>
                                 <Col xs={7} className="disclaimer">

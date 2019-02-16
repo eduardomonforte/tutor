@@ -139,7 +139,7 @@ app.use(function (err, req, res, next) {
 
 mongoose
   .connect(
-    process.env.MONGODB_URI || "mongodb://localhost/tutor", 
+    process.env.MONGODB_URI || "mongodb://localhost/tutor",
     { useNewUrlParser: true }
   )
     .then(() => {
