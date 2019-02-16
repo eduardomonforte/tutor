@@ -1,4 +1,6 @@
-![alt text](Tutor backdrop goes here.)
+<p align="center">
+ <img src="https://raw.githubusercontent.com/eduardomonforte/tutor/master/client/public/assets/cover-backdrop.jpg"/>
+</p>
 
 # Tutor
 
@@ -36,7 +38,7 @@ There is no maximum amount of resources that can be uploaded by the users, never
 ## Special thanks
 
 Big shout-out to the following people for helping us out and dedicating a lot of their time for this project to happen.
-* **Fernanda Sosa** - []
+* **Fernanda Sosa** - [nanda-sr](https://github.com/nanda-sr)
 * **Jorge Báez** - [jibm82](https://github.com/jibm82)
 
 ## Authors
