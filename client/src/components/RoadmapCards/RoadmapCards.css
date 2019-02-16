@@ -13,6 +13,11 @@
     transition: all .2s ease-in-out;
 }
 
+.card-img-top {
+    border-top-left-radius: .8em;
+    border-top-right-radius: .8em;
+}
+
 .button-for-icon {
     padding: 10px;
 }

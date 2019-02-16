@@ -1,16 +1,42 @@
 .NoMatch {
-    /* background-image: url("/assets/NoMatch-background.png");  */
-    background: black;
+    background-image: url("/assets/404-background.jpg"); 
+    background-size: cover;
+    /* background: black; */
     width: 100%;
     height: 100%;      
     /* Set up positioning */
     position: fixed;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
 }
 
 .bookmark-neon{
-    margin-top: 10em;
-    margin-bottom: 10em;
-    max-width:200px;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    max-width:230px;
+}
+
+.nomatch-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    color: white !important;
+
+}
+.nomatch-button {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    color: white !important;
+    border-radius:20px;
+    padding-left:20px !important;
+    padding-right:20px;
+    background-color: rgba(69, 245, 170, 0.7) !important;
+}
+
+.nomatch-button:hover {
+background: rgba(69, 245, 170, 1) !important;
+position:relative;
+-webkit-box-shadow:0 1px 4px rgba(69, 245, 170, 1), 0 0 40px rgba(0, 0, 0, 0.1);
+-moz-box-shadow:0 1px 4px rgba(69, 245, 170, 1), 0 0 40px rgba(0, 0, 0, 0.1);
+box-shadow:0 1px 4px rgba(69, 245, 170, 1), 0 0 40px rgba(0, 0, 0, 0.1);
+cursor: pointer;
 }

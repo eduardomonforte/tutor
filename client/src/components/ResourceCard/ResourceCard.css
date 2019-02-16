@@ -2,6 +2,10 @@
     color: white;
 }
 
+.card-title {
+    color: #429191 !important;
+}
+
 /* .button-container {
     align-content: right !important;
     display: inline-block;
@@ -24,65 +28,78 @@
     padding:0;
 }
 
-.bookmark-button {
-    background-color: transparent !important;
-    border: 0;
-    outline: none;
-    padding: 0;
-    float: left;
-}
-#bookmark-icon {
-    height: 40px;
-}
-
 .karma {
     color: white !important;
     margin: 0;
     font-size: .9em;
     padding: 0;
-    margin-top: .5em;
+    /* margin-top: .5em; */
     float: left;
+}
+
+#bookmark-icon {
+    height: 30px;
+}
+
+.bookmark-button {
+    background-color: transparent !important;
+    fill:  rgba(239,35,60, 0.8) !important;
+    border: 0;
+    outline: none;
+    padding: 0;
+    float: left;
+}
+
+
+
+.bookmark-button:hover,
+.bookmark-button:focus {
+    background-color: transparent !important;
+    fill:  rgba(239,35,60, 0.95) !important;
+    border: 0;
+    outline: none;
+    padding: 0;
+    float: left;
+}
+
+#downvote-icon {
+    height: 30px;
 }
 
 .downvote-button {
     background-color: transparent !important;
+    fill:  rgba(239,35,60, 0.8) !important;
     border: 0;
     outline: none;
     padding: 0;
     float: right;
-    margin-right: 0
+    margin-right: 5px;
 }
 
-#downvote-icon {
-    height: 35px;
+.downvote-button:hover,
+.downvote-button:focus {
+    fill:  rgba(239,35,60, 0.95) !important;
+    padding:0;
+    cursor: pointer;
+}
+
+#upvote-icon {
+    height: 30px;
 }
 
 .upvote-button {
     background-color: transparent !important;
+    fill: rgba(102,235,102, 0.8) !important;
     border: 0;
     outline: none;
     padding: 0;
-    padding-left:5px;
     float: right;
 }
 
-.card-title {
-    color: #429191 !important;
+.upvote-button:hover,
+.upvote-button:focus {
+    fill: rgba(102,235,102, 0.95) !important;
+    position:relative;
+    padding:0;
+    cursor: pointer;
 }
-
-/* .upvote-button:hover {
-    background-color: black !important;
-    border-color: transparent !important;
-    padding: 0;
-    padding-left:3px;
-    float: right;
-} */
-
-#upvote-icon {
-    height: 35px;
-}
-
-/* #upvote-icon:hover {
-    fill: black;
-    height: 45px;
-} */
