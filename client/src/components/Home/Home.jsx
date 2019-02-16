@@ -40,9 +40,7 @@ class Home extends Component {
                             <h2>Because coding is a collaborative work, you’ll be able to mark any topic and schedule a session where other users can join and go through the content together.</h2>
                             <Row className="login">
                                 <Col className="lets-go-btn">
-                                    {/* <Link to="/Autho"> */}
                                     <Button href="/login" variant="secondary" className="login-button" id="loginbutton" size="lg" block>Let's Go!</Button>
-                                    {/* </Link> */}
                                 </Col>
                                 <Col xs={7} className="disclaimer">
                                     <p className="rogue-text">Clicking the button will sign you up or log you into your account through Auth0.</p>

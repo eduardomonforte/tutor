@@ -52,10 +52,6 @@ const graphQLResolvers = require('./graphql/resolvers/index')
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// View engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
-
 app.use(cors()) // enable `cors` to set HTTP response header: Access-Control-Allow-Origin: *
 app.use(bodyParser.json());
 app.use(logger('dev'));
@@ -63,7 +59,7 @@ app.use(cookieParser());
 
 // config express-session
 var sess = {
-  secret: 'CHANGE THIS SECRET',
+  secret: process.env.AUTH0_CLIENT_SECRET,
   cookie: {},
   resave: false,
   saveUninitialized: true
@@ -78,6 +74,10 @@ app.use(session(sess));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 app.use(flash());
 
