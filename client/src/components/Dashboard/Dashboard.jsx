@@ -126,8 +126,12 @@ class Dashboard extends Component {
 
     }
 
-    upvote = () => {
-        console.log('Upvote registered.');
+    upvote = (id) => {
+        console.log('Updvote registered')  
+    //   this.state.resources.forEach(resource => {
+    //       console.log('RESOURCE HERE ====>>> ', resource.rating)
+    //   })
+
     }
 
     downvote = () => {
@@ -199,6 +203,8 @@ class Dashboard extends Component {
                         {this.state.resources.map(resource => (
                             <ResourceCard
                                 key={resource.id}
+                                thumbnail={resource.thumbnail}
+                                image={icons.image}
                                 title={resource.name}
                                 description={resource.description}
                                 rating={resource.rating}

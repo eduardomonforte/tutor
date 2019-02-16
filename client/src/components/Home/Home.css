@@ -97,6 +97,14 @@ p {
     color: White !important;
 }
 
+.terms {
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+    font-size: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
 .roadmap {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
@@ -130,4 +138,24 @@ p {
     margin-top: 1rem;
     transition: all .2s ease-in-out;
     border: 0;
+}
+
+/* Sweetalert elements */
+
+/* .swal2-popup.swal2-modal.swal2-show {
+    opacity: .9;
+} */
+
+.swal2-image {
+    width:120px;
+}
+
+.swal2-title {
+    font-family: 'Titillium Web', sans-serif !important;
+    color: rgb(66, 145, 145) !important;
+}
+
+#swal2-content {
+    font-family: 'Titillium Web', sans-serif !important;
+    text-align: left !important;
 }

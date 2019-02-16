@@ -13,15 +13,19 @@ class Home extends Component {
         icons,
     };
 
-    showDescription = (description, url, image) => {
+    showDescription = (image, name, description, url, rgba, $) => {
         console.log(icons);
         Swal.fire({
-            // type: 'info',
+            background: 'url(/assets/modal.jpg)',
+            backdrop: 'rgba (0, 0, 0, .8)',
             imageUrl: image,
+            title: name,
             text: description,
-            title: url
-        })
-    }
+            showConfirmButton: false,
+            // confirmButtonText: 'See documentation',
+            // showConfirmButton: false,
+    })
+}
 
     render() {
         return (
@@ -72,8 +76,8 @@ class Home extends Component {
                                 key={icons.id}
                                 id={icons.id}
                                 image={icons.image}
-                                description={icons.text}
                                 name={icons.name}
+                                description={icons.text}
                                 url={icons.link}
                                 showDescription={this.showDescription}
                             />
