@@ -7,7 +7,6 @@ const dotenv = require('dotenv');
 const passport = require('passport');
 const Auth0Strategy = require('passport-auth0');
 const flash = require('connect-flash');
-const userInViews = require('./lib/middleware/userInViews');
 const authRouter = require('./routes/auth');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -25,7 +24,7 @@ const strategy = new Auth0Strategy(
     clientID: process.env.AUTH0_CLIENT_ID,
     clientSecret: process.env.AUTH0_CLIENT_SECRET,
     callbackURL:
-      process.env.AUTH0_CALLBACK_URL || '/dashboard'
+      process.env.AUTH0_CALLBACK_URL || '/callback'
   },
   function (accessToken, refreshToken, extraParams, profile, done) {
     // accessToken is the token to call Auth0 API (not needed in the most cases)
@@ -101,10 +100,10 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(userInViews());
-app.use('/', authRouter);
+// app.use(userInViews());
+// app.use('/', authRouter);
 app.use('/', indexRouter);
-app.use('/', usersRouter);
+// app.use('/', usersRouter);
 
 // Catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -142,14 +141,14 @@ mongoose
     process.env.MONGODB_URI || "mongodb://localhost/tutor",
     { useNewUrlParser: true }
   )
-    .then(() => {
-      app.listen(PORT, function() {
-        console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-      })
+  .then(() => {
+    app.listen(PORT, function () {
+      console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
     })
-    .catch(err => {
-      console.log(err)
-    })
+  })
+  .catch(err => {
+    console.log(err)
+  })
 
 module.exports = app;
 
