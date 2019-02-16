@@ -11,6 +11,10 @@
     padding-top: 0;
 }
 
+#add-modal {
+    margin-top: 0rem !important;
+}
+
 .tag-image {
     float: right;
     margin-right: 4em;
