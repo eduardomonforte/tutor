@@ -17,10 +17,10 @@ const env = {
   AUTH0_DOMAIN: process.env.AUTH0_DOMAIN,
 };
 
-// router.get('/', (req, res, next) => {
-//   // Now, rather than just sending the text "You are on the homepage", we are going to actually render the view we created using the res.render method. The second argument will allow us to pass in data from the backend to our view dynamically.
-//   res.render('index', { env: env });
-// });
+router.get('/', (req, res, next) => {
+  // Now, rather than just sending the text "You are on the homepage", we are going to actually render the view we created using the res.render method. The second argument will allow us to pass in data from the backend to our view dynamically.
+  res.render('index', { env: env });
+});
 
 router.get('/login', passport.authenticate('auth0', {
   clientID: env.AUTH0_CLIENT_ID,
