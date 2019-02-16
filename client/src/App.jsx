@@ -6,17 +6,19 @@ import Dashboard from './components/Dashboard/Dashboard';
 import NoMatch from './components/NoMatch/NoMatch';
 import Terms from './components/Terms/Terms';
 
+// Main App class
+
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Route exact path="/" component ={Home} />
-          <Route path="/Dashboard" component ={Dashboard} />
-          <Route path="/NoMatch" component ={NoMatch} />
-          <Route path="/Terms" component={Terms} />
+          <Route exact path="/" component={Home} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/nomatch" component={NoMatch} />
+          <Route path="/terms" component={Terms} />
         </div>
-      </Router> 
+      </Router>
     );
   }
 }

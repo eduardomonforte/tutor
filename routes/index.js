@@ -55,7 +55,7 @@ router.get('/callback',
     if (!req.user) {
       throw new Error('user null');
     }
-    res.redirect("/");
+    res.redirect("/dashboard");
   }
 );
 
