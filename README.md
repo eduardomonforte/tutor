@@ -1,4 +1,7 @@
 ![alt text](Tutor backdrop goes here.)
+<p align="center">
+ <img src="https://raw.githubusercontent.com/eduardomonforte/tutor/master/client/public/assets/cover-backdrop.jpg"/>
+</p>
 
 # Tutor
 
