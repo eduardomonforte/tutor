@@ -189,42 +189,6 @@ class Dashboard extends Component {
             });
     }
 
-    postResource = (title, description, url) => {
-        const requestBody = {
-            query: `
-                mutation{
-                    contributeResource(resourceInput: {
-                        title: ${title},
-                        description: ${description},
-                        url: ${url},
-                    }) {
-                        title
-                        description
-                        url
-                    }
-                }
-            `
-        }
-    
-        fetch('http://localhost:3001/graphql', {
-            method: 'POST',
-            body: JSON.stringify(requestBody),
-            headers: {
-            'Content-Type': 'application/json'
-            }
-        })
-            .then(res => {
-                if (res.status !== 200 && res.status !== 201) {
-                    throw new Error('Failed!');
-                }
-                return res.json();
-            })
-            .catch(err => {
-                console.log(err);
-            });
-    }
-
-
     componentDidMount() {
         this.fetchResources()
         this.handleSort(this.state.resources)

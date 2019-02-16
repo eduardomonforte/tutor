@@ -21,6 +21,79 @@ class ModalComponent extends Component {
         this.setState({ show: true });
     }
 
+    // postResource = (title, description, url) => {
+    //     const requestBody = {
+    //         query: `
+    //             mutation{
+    //                 contributeResource(resourceInput: {
+    //                     title: ${title},
+    //                     description: ${description},
+    //                     url: ${url},
+    //                 }) {
+    //                     title
+    //                     description
+    //                     url
+    //                 }
+    //             }
+    //         `
+    //     }
+    
+    //     fetch('http://localhost:3001/graphql', {
+    //         method: 'POST',
+    //         body: JSON.stringify(requestBody),
+    //         headers: {
+    //         'Content-Type': 'application/json'
+    //         }
+    //     })
+    //         .then(res => {
+    //             if (res.status !== 200 && res.status !== 201) {
+    //                 throw new Error('Failed!');
+    //             }
+    //             return res.json()
+    //         })
+    //         .then(() => {
+    //             this.handleClose()
+    //         })
+    //         .catch(err => {
+    //             console.log(err);
+    //         });
+    // }
+
+    postResource = (title, description, url) => {
+        const requestBody = {
+            query: `
+                mutation{
+                    contributeResource(resourceInput: {
+                        title: ${this.state.title},
+                        description: ${this.state.description},
+                        url: ${this.state.url},
+                    }) {
+                        title
+                        description
+                        url
+                    }
+                }
+            `
+        }
+    
+        fetch('http://localhost:3001/graphql', {
+            method: 'POST',
+            body: JSON.stringify(requestBody),
+            headers: {
+            'Content-Type': 'application/json'
+            }
+        })
+            .then(res => {
+                if (res.status !== 200 && res.status !== 201) {
+                    throw new Error('Failed!');
+                }
+                return res.json();
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }
+
     render() {
         return (
             <>
@@ -37,7 +110,7 @@ class ModalComponent extends Component {
                             <Form.Control type="title" placeholder="Title" />
                         </Form.Group>
                         <Form.Group>
-                            <Form.Control type="url" placeholder="URL" />
+                            <Form.Control ref="contributeResource" type="url" placeholder="URL" />
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
                             <Form.Control type="description" as="textarea" rows="3" placeholder="Description" />
