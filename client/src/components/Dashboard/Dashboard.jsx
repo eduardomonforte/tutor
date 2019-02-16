@@ -3,7 +3,8 @@ import { Jumbotron, Container, Row, Col, Image, CardDeck, Button } from 'react-b
 import Navbar from '../CustomNavbar/CustomNavbar';
 import Footer from '../Footer/Footer';
 import ResourceCard from '../ResourceCard/ResourceCard';
-import UserDropdown from "../UserDropdown/UserDropdown"
+import UserDropdown from "../UserDropdown/UserDropdown";
+import ModalComponent from "../ModalComponent/ModalComponent";
 import resources from '../../resources/resourcesDB.json';
 import icons from "../RoadmapCards/icons.json";
 import sortResources from '../../resources/sortResources';
@@ -116,21 +117,11 @@ class Dashboard extends Component {
         // console.log("index: " + this.state.dropArray.index)
     };
 
-    addResource = () => {
-        console.log('Resource added.');
-        Swal.fire({
-            type: 'info',
-            title: 'Resource added!',
-            text: "...just kidding, we're still working on this."
-        })
-
-    }
-
     upvote = (id) => {
-        console.log('Updvote registered')  
-    //   this.state.resources.forEach(resource => {
-    //       console.log('RESOURCE HERE ====>>> ', resource.rating)
-    //   })
+        console.log('Updvote registered')
+        //   this.state.resources.forEach(resource => {
+        //       console.log('RESOURCE HERE ====>>> ', resource.rating)
+        //   })
 
     }
 
@@ -183,7 +174,7 @@ class Dashboard extends Component {
                             <UserDropdown dropArray={this.state.dropArray} key={this.state.dropArray.index} subject={this.state.subject} whenClicked={this.whenClicked} />
                         </Col>
                         <Col xs={2}>
-                            <Button className="Add-resource" variant="secondary" size="lg" block onClick={this.addResource}>Add Resource</Button>
+                            <ModalComponent />
                         </Col>
                         <Col xs={{ span: 2, offset: 3 }}>
                             <Button href="http://localhost:3001/logout" className="logout-button" variant="secondary" size="lg" block>Sign Out</Button>
