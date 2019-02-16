@@ -7,7 +7,7 @@ type Resource {
   description: String!
   url: String!
   date: String!
-  contributor: User!
+  contributor: User
   rating: Float
 }
 type User {
@@ -22,7 +22,7 @@ input ResourceInput {
   description: String!
   url: String!
   date: String!
-  contributor: String!
+  contributor: String
 }
 input UserInput {
   email: String!
