@@ -167,7 +167,7 @@ class Dashboard extends Component {
             `
         }
     
-        fetch('http://localhost:3001/graphql', {
+        fetch('https://tutor-app-1.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestBody),
             headers: {
@@ -216,7 +216,7 @@ class Dashboard extends Component {
                             <ModalComponent />
                         </Col>
                         <Col xs={{ span: 2, offset: 3 }}>
-                            <Button href="http://localhost:3001/logout" className="logout-button" variant="secondary" size="lg" block>Sign Out</Button>
+                            <Button href="https://tutor-app-1.herokuapp.com/logout" className="logout-button" variant="secondary" size="lg" block>Sign Out</Button>
                         </Col>
                     </Row>
                 </Jumbotron>
