@@ -4,12 +4,13 @@ import Navbar from '../CustomNavbar/CustomNavbar';
 import Footer from '../Footer/Footer';
 import ResourceCard from '../ResourceCard/ResourceCard';
 import UserDropdown from "../UserDropdown/UserDropdown"
-import resources from '../../resources/resourcesDB.json';
+// import resources from '../../resources/resourcesDB.json';
 import icons from "../RoadmapCards/icons.json";
 import sortResources from '../../resources/sortResources';
 import Icons from "../RoadmapCards/RoadMapIcons";
 import './Dashboard.css';
 import Swal from 'sweetalert2';
+import fetch from 'isomorphic-fetch';
 
 const dropArray = [
     {
@@ -102,6 +103,8 @@ const dropArray = [
     }
 ];
 
+let resources = []
+
 class Dashboard extends Component {
     state = {
         resources,
@@ -156,12 +159,84 @@ class Dashboard extends Component {
 
     handleSort = (resources) => {
         let sortedResources = sortResources(resources);
-        this.setState({ resources: sortedResources });
+        this.setState({ resources: sortedResources }, console.log(this.state.resources));
     };
 
+    fetchResources = () => {
+        const requestBody = {
+            query: `
+                query {
+                    resources {
+                        title
+                        description
+                        url
+                        rating
+                    }
+                }
+            `
+        }
+    
+        fetch('http://localhost:3001/graphql', {
+            method: 'POST',
+            body: JSON.stringify(requestBody),
+            headers: {
+            'Content-Type': 'application/json'
+            }
+        })
+            .then(res => {
+                if (res.status !== 200 && res.status !== 201) {
+                    throw new Error('Failed!');
+                }
+                return res.json();
+            })
+            .then(resData => {
+                resources = resData.data.resources;
+                this.setState ({ resources: resources }, console.log(this.state.resources))
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }
+
+    postResource = (title, description, url) => {
+        const requestBody = {
+            query: `
+                mutation{
+                    contributeResource(resourceInput: {
+                        title: ${title},
+                        description: ${description},
+                        url: ${url},
+                    }) {
+                        title
+                        description
+                        url
+                    }
+                }
+            `
+        }
+    
+        fetch('http://localhost:3001/graphql', {
+            method: 'POST',
+            body: JSON.stringify(requestBody),
+            headers: {
+            'Content-Type': 'application/json'
+            }
+        })
+            .then(res => {
+                if (res.status !== 200 && res.status !== 201) {
+                    throw new Error('Failed!');
+                }
+                return res.json();
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }
+
+
     componentDidMount() {
+        this.fetchResources()
         this.handleSort(this.state.resources)
-        console.log(resources)
     };
 
     render() {
@@ -205,7 +280,7 @@ class Dashboard extends Component {
                                 key={resource.id}
                                 thumbnail={resource.thumbnail}
                                 image={icons.image}
-                                title={resource.name}
+                                title={resource.title}
                                 description={resource.description}
                                 rating={resource.rating}
                                 url={resource.url}
