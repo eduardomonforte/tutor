@@ -54,15 +54,18 @@ class Home extends Component {
                 <Row>
                     <Col xs={12}>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-                            <h2 className="roadmap">The bootcamp’s fullstack developer roadmap.</h2>
+                            <h2 className="roadmap">The bootcamp’s full-stack developer roadmap.</h2>
                         </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12}>
                         <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                            <p className="roadmap-description">It's all a game of angles. I'm gonna start with a little Alizarin crimson and a touch of Prussian blue Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. We don't need any guidelines or formats. All we need to do is just let it flow right out of us.
-                            No pressure. Just relax and watch it happen. It's a good way of getting rid of all your anxieties and hostilities. We have no limits to our world. We're only limited by our imagination. Here's another little happy bush Without washing the brush, I'm gonna go right into some Van Dyke Brown, some Burnt Umber, and a little bit of Sap Green. Work on one thing at a time. Don't get carried away - we have plenty of time.</p>
+                            <p className="roadmap-description">
+                                Welcome to the bootcamp! Throughout the entire program you'll be introduced to all these new technologies (and much more tools in-between), you'll laugh, you'll sometimes be in awe and eventually you'll cry.
+                                It will be overwhelming and frustrating from day one until you finish, but DON'T panic! Learning how to code is something that takes dedication and a lot of continuous effort. By the end of the program you'll find out you have learnt a lot and you’ll be very proud of yourself.
+                                With that said, welcome to tutor. In here you’ll find a curated collection of the most useful and proved resources out there that closely follow the coding bootcamp program, those that the TA’s and professors recommend and talk about during the sessions. And don’t worry about losing track of them, you’ll be able to save them by topic and week in your own user profile as well as rate them by relevance and of course add some of your own. Enjoy!
+                            </p>
                         </div>
                     </Col>
                 </Row>

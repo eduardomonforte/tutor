@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Github",
+        "name": "GitHub",
         "image": "assets/SVG/github-icon.svg",
         "text": "GitHub is a web-based hosting service for version control using Git. It helps developers store and manage their code, as well as track and control changes to it.",
         "link": "https://github.com/",
@@ -11,7 +11,7 @@
         "id": 2,
         "name": "Git",
         "image": "assets/SVG/git-icon.svg",
-        "text": "Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows",
+        "text": "Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.",
         "link": "https://git-scm.com/",
         "clicked": false
     },
@@ -41,15 +41,15 @@
     },
     {
         "id": 6,
-        "name": "Javascript",
+        "name": "JavaScript",
         "image": "assets/SVG/javascript.svg",
-        "text": "Javascript is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles. JavaScript runs on the client side of the web, which can be used to design or program how the web pages behave on the occurrence of an event.",
+        "text": "JavaScript is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles. JavaScript runs on the client side of the web, which can be used to design or program how the web pages behave on the occurrence of an event.",
         "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         "clicked": false
     },
     {
         "id": 7,
-        "name": "Jquery",
+        "name": "jQuery",
         "image": "assets/SVG/jquery.svg",
         "text": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.",
         "link": "https://jquery.com/",
@@ -59,7 +59,7 @@
         "id": 8,
         "name": "Firebase",
         "image": "assets/SVG/firebase.svg",
-        "text": "Firebase is a technology that allows you to make web applications with no server-side programming so that development turns out to be quicker and easier. With Firebase, you don't need to stress over-provisioning servers or building REST APIs, with just a little bit of configuration; you can allow Firebase to store data, verify users, and implement access rules.",
+        "text": "Firebase is a technology that allows you to make web applications with no server-side programming so that development turns out to be quicker and easier. With Firebase, you don't need to stress over provisioning servers or building REST APIs; with just a little bit of configuration, you can allow Firebase to store data, verify users and implement access rules.",
         "link": "https://firebase.google.com/",
         "clicked": false
     },
@@ -75,7 +75,7 @@
         "id": 10,
         "name": "MySQL",
         "image": "assets/SVG/mysql.svg",
-        "text": "MySQL, is an open source relational database management system that runs as a server providing multi-user access to a number of databases. It is based on the structure query language (SQL), which is used for adding, removing, and modifying information in the database.",
+        "text": "MySQL is an open source relational database management system that runs as a server providing multi-user access to a number of databases. It is based on the structure query language (SQL), which is used for adding, removing, and modifying information in the database.",
         "link": "https://www.mysql.com/",
         "clicked": false
     },
@@ -83,7 +83,7 @@
         "id": 11,
         "name": "Express",
         "image": "assets/SVG/express.svg",
-        "text": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. Express basically helps you manage everything, from routes, to handling requests and views.",
+        "text": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. Express basically helps you manage everything, from routes to handling requests and views.",
         "link": "https://expressjs.com/",
         "clicked": false
     },
@@ -107,13 +107,13 @@
         "id": 14,
         "name": "MongoDB",
         "image": "assets/SVG/mongodb.svg",
-        "text": "MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need. MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time",
+        "text": "MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need. MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time.",
         "link": "https://www.mongodb.com/",
         "clicked": false
     },
     {
         "id": 15,
-        "name": "Wordpress",
+        "name": "WordPress",
         "image": "assets/SVG/wordpress-icon.svg",
         "text": "WordPress is an online, open source website creation tool written in PHP. It’s probably the easiest and most powerful blogging and website content management system (or CMS) in existence today.",
         "link": "https://wordpress.org/",
