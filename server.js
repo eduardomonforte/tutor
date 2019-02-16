@@ -14,6 +14,7 @@ const usersRouter = require('./routes/users');
 const bodyParser = require('body-parser')
 const graphqlHttp = require('express-graphql')
 const mongoose = require("mongoose")
+const cors = require('cors')
 
 dotenv.load();
 
@@ -55,6 +56,7 @@ const PORT = process.env.PORT || 3001;
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(cors()) // enable `cors` to set HTTP response header: Access-Control-Allow-Origin: *
 app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(cookieParser());
@@ -82,9 +84,9 @@ app.use(flash());
 app.use(
   '/graphql',
   graphqlHttp({
-  schema: graphQLSchema,
-  rootValue: graphQLResolvers,
-  graphiql: true
+    schema: graphQLSchema,
+    rootValue: graphQLResolvers,
+    graphiql: true
   })
 )
 
