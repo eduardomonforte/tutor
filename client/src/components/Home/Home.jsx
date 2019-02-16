@@ -41,7 +41,7 @@ class Home extends Component {
                             <Row className="login">
                                 <Col className="lets-go-btn">
                                     {/* <Link to="/Autho"> */}
-                                    <Button href="/Autho" variant="secondary" className="login-button" id="loginbutton" size="lg" block>Let's Go!</Button>
+                                    <Button href="http://localhost:3001/login" variant="secondary" className="login-button" id="loginbutton" size="lg" block>Let's Go!</Button>
                                     {/* </Link> */}
                                 </Col>
                                 <Col xs={7} className="disclaimer">
