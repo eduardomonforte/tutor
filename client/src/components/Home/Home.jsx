@@ -24,8 +24,8 @@ class Home extends Component {
             showConfirmButton: false,
             // confirmButtonText: 'See documentation',
             // showConfirmButton: false,
-    })
-}
+        })
+    }
 
     render() {
         return (
@@ -37,7 +37,6 @@ class Home extends Component {
                             <h1>Hello, students</h1>
                             <h2>Tutor is a <strong>powerful and interactive</strong> way of reinforcing your coding bootcamp knowledge.</h2><br />
                             <h2>In here you’ll find the best tutorials and learning resources that follow your bootcamp program, and will help you along the way. The curated content is updated constantly by the users of this platform.</h2><br />
-                            <h2>Because coding is a collaborative work, you’ll be able to mark any topic and schedule a session where other users can join and go through the content together.</h2>
                             <Row className="login">
                                 <Col className="lets-go-btn">
                                     <Button href="/login" variant="secondary" className="login-button" id="loginbutton" size="lg" block>Let's Go!</Button>
