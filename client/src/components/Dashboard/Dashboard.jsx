@@ -134,13 +134,13 @@ class Dashboard extends Component {
         console.log('Downvote registered.');
     }
 
-    signOut = () => {
-        Swal.fire({
-            type: 'info',
-            title: 'You were swallowed by a black hole!',
-            text: "Sorry about that, it looks like we broke the space-time continuum."
-        })
-    }
+    // signOut = () => {
+    //     Swal.fire({
+    //         type: 'info',
+    //         title: 'You were swallowed by a black hole!',
+    //         text: "Sorry about that, it looks like we broke the space-time continuum."
+    //     })
+    // }
 
     voteRecorded = () => {
         Swal.fire({
@@ -182,7 +182,7 @@ class Dashboard extends Component {
                             <Button className="Add-resource" variant="secondary" size="lg" block onClick={this.addResource}>Add Resource</Button>
                         </Col>
                         <Col xs={{ span: 2, offset: 3 }}>
-                            <Button className="logout-button" variant="secondary" size="lg" block onClick={this.signOut}>Sign Out</Button>
+                            <Button href="http://localhost:3001/logout" className="logout-button" variant="secondary" size="lg" block>Sign Out</Button>
                         </Col>
                     </Row>
                 </Jumbotron>

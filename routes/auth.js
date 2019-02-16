@@ -26,7 +26,7 @@ router.get('http://localhost:3000/dashboard', function (req, res, next) {
 // Perform session logout and redirect to homepage
 router.get('/logout', (req, res) => {
   req.logout();
-  res.redirect('/');
+  res.redirect('http://localhost:3000/');
 });
 
 module.exports = router;
