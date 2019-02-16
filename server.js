@@ -64,9 +64,9 @@ var sess = {
   saveUninitialized: true
 };
 
-if (app.get('env') === 'production') {
-  sess.cookie.secure = true; // serve secure cookies, requires https
-}
+// if (app.get('env') === 'production') {
+//   sess.cookie.secure = true; // serve secure cookies, requires https
+// }
 
 app.use(session(sess));
 
