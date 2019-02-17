@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {Jumbotron, Container, Row, Col} from 'react-bootstrap';
-import '../Home/Home';
+import React, { Component } from 'react';
+import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
+import '../Home/Home.css';
 import Navbar from '../CustomNavbar/CustomNavbar';
 import Footer from '../Footer/Footer';
 
@@ -9,17 +9,17 @@ class Terms extends Component {
         return (
             <Container fluid>
                 <Jumbotron fluid>
-                    <Navbar/>
+                    <Navbar />
                     <Row>
                         <Col
                             style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            width: '100%'
-                        }}>
+                                display: 'flex',
+                                justifyContent: 'center',
+                                width: '100%'
+                            }}>
                             <div>
                                 <h1>Terms and Conditions ("Terms")</h1>
-                                <br/>
+                                <br />
                                 <p>Last updated: February 15, 2019</p>
                             </div>
                         </Col>
@@ -29,20 +29,20 @@ class Terms extends Component {
                     <Col xs={12}>
                         <div
                             style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            width: '100%'
-                        }}>
+                                display: 'flex',
+                                justifyContent: 'center',
+                                width: '100%'
+                            }}>
                             <p className="terms">Please read these Terms and Conditions
                                 ("Terms", "Terms and Conditions") carefully before using the Tutor.co website
-                                (the "Service") operated by Tutor ("us", "we", or "our").<br/><br/>
+                                (the "Service") operated by Tutor ("us", "we", or "our").<br /><br />
                                 Your access to and use of the Service is conditioned on your acceptance of and
                                 compliance with these Terms. These Terms apply to all visitors, users and others
                                 who access or use the Service. By accessing or using the Service you agree to be
                                 bound by these Terms. If you disagree with any part of the terms then you may
                                 not access the Service. The Terms and Conditions agreement for Tutor has been
                                 created with the help of<a href="https://termsfeed.com/">
-                                    TermsFeed</a>.<br/><br/>
+                                    TermsFeed</a>.<br /><br />
                                 <h3>Accounts</h3>
                                 <p>When you create an account with us, you must provide us information that is
                                     accurate, complete, and current at all times. Failure to do so constitutes a
@@ -55,7 +55,7 @@ class Terms extends Component {
 
                                 <p>You agree not to disclose your password to any third party. You must notify
                                     us immediately upon becoming aware of any breach of security or unauthorized use
-                                    of your account.</p><br/>
+                                    of your account.</p><br />
 
                                 <h3>Links To Other Web Sites</h3>
 
@@ -70,7 +70,7 @@ class Terms extends Component {
                                     available on or through any such web sites or services.</p>
 
                                 <p>We strongly advise you to read the terms and conditions and privacy policies
-                                    of any third-party web sites or services that you visit.</p><br/>
+                                    of any third-party web sites or services that you visit.</p><br />
 
                                 <h3>Termination</h3>
 
@@ -92,7 +92,7 @@ class Terms extends Component {
 
                                 <p>All provisions of the Terms which by their nature should survive termination
                                     shall survive termination, including, without limitation, ownership provisions,
-                                    warranty disclaimers, indemnity and limitations of liability.</p><br/>
+                                    warranty disclaimers, indemnity and limitations of liability.</p><br />
 
                                 <h3>Governing Law</h3>
 
@@ -104,7 +104,7 @@ class Terms extends Component {
                                     be invalid or unenforceable by a court, the remaining provisions of these Terms
                                     will remain in effect. These Terms constitute the entire agreement between us
                                     regarding our Service, and supersede and replace any prior agreements we might
-                                    have between us regarding the Service.</p><br/>
+                                    have between us regarding the Service.</p><br />
 
                                 <h3>Changes</h3>
 
@@ -115,7 +115,7 @@ class Terms extends Component {
 
                                 <p>By continuing to access or use our Service after those revisions become
                                     effective, you agree to be bound by the revised terms. If you do not agree to
-                                    the new terms, please stop using the Service.</p><br/>
+                                    the new terms, please stop using the Service.</p><br />
 
                                 <h3>Contact Us</h3>
 
@@ -125,7 +125,7 @@ class Terms extends Component {
                         </div>
                     </Col>
                 </Row>
-                <Footer/>
+                <Footer />
             </Container>
         );
     }
