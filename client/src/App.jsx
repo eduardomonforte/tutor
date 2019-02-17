@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 class App extends Component {
 
   static propTypes = {
-    children: PropTypes.node
+    children: PropTypes.node.isRequired
   }
 
   render() {
