@@ -112,6 +112,15 @@ app.use(function (req, res, next) {
   next(err);
 });
 
+// A probable patch from StackOverflow for deployment in Heroku
+
+app.get('/*', (req, res) => {
+  let url = path.join(__dirname, '../client/build', 'index.html');
+  if (!url.startsWith('/app/')) // we're on local windows
+    url = url.substring(1);
+  res.sendFile(url);
+});
+
 // Error handlers
 
 // Development error handler
