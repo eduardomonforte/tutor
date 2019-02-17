@@ -9,14 +9,19 @@ import Terms from './components/Terms/Terms';
 // Main App class
 
 class App extends Component {
+
+  static propTypes = {
+    children: PropTypes.node
+  }
+
   render() {
     return (
       <Router>
         <div>
           <Route exact path="/" component={Home} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/nomatch" component={NoMatch} />
-          <Route exact path="/terms" component={Terms} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/nomatch" component={NoMatch} />
+          <Route path="/terms" component={Terms} />
         </div>
       </Router>
     );
