@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Dashboard from './components/Dashboard/Dashboard';
 import NoMatch from './components/NoMatch/NoMatch';
 import Terms from './components/Terms/Terms';
+import PropTypes from 'prop-types';
 
 // Main App class
 
